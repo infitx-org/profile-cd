@@ -1,0 +1,17 @@
+management-api:
+  image:
+    tag: 6.1.1
+experience-api:
+  image:
+    tag: 3.1.0
+scheme-adapter:
+  sdk-scheme-adapter-api-svc:
+    image:
+        tag: v23.6.0-snapshot.17
+ttk:
+  ml-testing-toolkit-backend:
+    image:
+      tag: v17.3.1
+  ml-testing-toolkit-frontend:
+    image:
+      tag: v15.6.0

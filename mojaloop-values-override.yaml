@@ -8,9 +8,12 @@ DEFINE:
   ml-api-adapter: &adapterImage
     image:
       tag: v14.1.0-snapshot.25
-  ml-testing-toolkit: &toolkitImage
+  ml-testing-toolkit: &toolkitBackendImage
     image:
       tag: v17.3.1
+  ml-testing-toolkit-ui: &toolkitFrontendImage
+    image:
+      tag: v15.6.0
   quoting-service: &quotingImage
     image:
       tag: v15.8.0-snapshot.43
@@ -24,7 +27,8 @@ DEFINE:
     image:
       tag: v15.1.1
 ml-testing-toolkit:
-  ml-testing-toolkit-backend: *toolkitImage
+  ml-testing-toolkit-backend: *toolkitBackendImage
+  ml-testing-toolkit-frontend: *toolkitFrontendImage
 account-lookup-service:
   account-lookup-service: *accountImage
   account-lookup-service-admin: *accountImage

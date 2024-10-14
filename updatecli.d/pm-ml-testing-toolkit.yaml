@@ -1,0 +1,16 @@
+name: Update PM ml-testing-toolkit
+sources:
+  image:
+    kind: dockerimage
+    spec:
+      image: mojaloop/ml-testing-toolkit
+      versionfilter:
+        kind: semver
+        pattern: ^17.3.1
+targets:
+  yaml:
+    kind: yaml
+    spec:
+      engine: yamlpath
+      file: pm4ml-values-override.yaml
+      key: $.ttk.ml-testing-toolkit-backend.image.tag

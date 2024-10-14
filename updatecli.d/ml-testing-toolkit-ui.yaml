@@ -1,16 +1,16 @@
-name: Update Mojaloop transaction-requests-service
+name: Update Mojaloop ml-testing-toolkit-ui
 sources:
   image:
     kind: dockerimage
     spec:
-      image: mojaloop/transaction-requests-service
+      image: mojaloop/ml-testing-toolkit-ui
       versionfilter:
         kind: semver
-        pattern: ^14.3.1
+        pattern: ^15.6.0
 targets:
   yaml:
     kind: yaml
     spec:
       engine: yamlpath
       file: mojaloop-values-override.yaml
-      key: $.DEFINE.transaction-request-service.image.tag
+      key: $.DEFINE.ml-testing-toolkit-ui.image.tag

@@ -1,0 +1,22 @@
+# mojaloop/reporting-hub-bop-role-ui:v1.5.4-snapshot.5
+# mojaloop/reporting-hub-bop-shell:v2.2.3
+# mojaloop/role-assignment-service:v2.1.0
+# mojaloop/mojaloop-simulator:v12.1.1
+# pm4ml/mojaloop-payment-manager-ui:1.17.5
+
+name: Update PM4ML images
+sources:
+  image:
+    kind: dockerimage
+    spec:
+      image: mojaloop/ml-testing-toolkit
+      versionfilter:
+        kind: semver
+        pattern: ^17.3.1
+targets:
+  yaml:
+    kind: yaml
+    spec:
+      engine: yamlpath
+      file: pm4ml-values-override.yaml
+      key: $.ttk.ml-testing-toolkit-backend.image.tag

@@ -1,0 +1,16 @@
+name: Update Proxy mojaloop-payment-manager-management-api
+sources:
+  image:
+    kind: dockerimage
+    spec:
+      image: pm4ml/mojaloop-payment-manager-management-api
+      versionfilter:
+        kind: semver
+        pattern: ^6.1.1
+targets:
+  yaml:
+    kind: yaml
+    spec:
+      engine: yamlpath
+      file: proxy-values-override.yaml
+      key: $.DEFINE.management-api.image.tag

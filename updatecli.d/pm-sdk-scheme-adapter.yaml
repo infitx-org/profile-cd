@@ -1,0 +1,16 @@
+name: Update PM sdk-scheme-adapter
+sources:
+  image:
+    kind: dockerimage
+    spec:
+      image: mojaloop/sdk-scheme-adapter
+      versionfilter:
+        kind: semver
+        pattern: '>=23.6.0-snapshot.16 <=23.6.0-snapshot.9999'
+targets:
+  yaml:
+    kind: yaml
+    spec:
+      engine: yamlpath
+      file: pm4ml-values-override.yaml
+      key: $.scheme-adapter.sdk-scheme-adapter-api-svc.image.tag

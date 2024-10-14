@@ -80,10 +80,10 @@ sources:
   reporting-hub-bop-positions-ui:
     kind: dockerimage
     spec:
-      image: vijayinfitx/reporting-hub-bop-positions-ui
+      image: mojaloop/reporting-hub-bop-positions-ui
       versionfilter:
         kind: semver
-        pattern: ^0.0.7
+        pattern: ^0.0.8
   event-sidecar:
     kind: dockerimage
     spec:
