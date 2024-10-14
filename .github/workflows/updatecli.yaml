@@ -1,0 +1,29 @@
+name: Update Mojaloop images
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  updatecli:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Install updatecli
+        uses: updatecli/updatecli-action@v2
+
+      - name: Update image tags
+        run: updatecli apply
+
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          commit-message: Update Mojaloop image versions
+          title: Update Mojaloop image versions

@@ -1,0 +1,227 @@
+name: Update Mojaloop image versions
+sources:
+  central-settlement:
+    kind: dockerimage
+    spec:
+      image: mojaloop/central-settlement
+      versionfilter:
+        kind: semver
+        pattern: '>=17.0.0-snapshot.19 <=17.0.0-snapshot.9999'
+  simulator:
+    kind: dockerimage
+    spec:
+      image: mojaloop/simulator
+      versionfilter:
+        kind: semver
+        pattern: '>=12.3.0-snapshot.3 <=12.3.0-snapshot.9999'
+  reporting-hub-bop-api-svc:
+    kind: dockerimage
+    spec:
+      image: mojaloop/reporting-hub-bop-api-svc
+      versionfilter:
+        kind: semver
+        pattern: ^2.1.0
+  reporting-events-processor-svc:
+    kind: dockerimage
+    spec:
+      image: mojaloop/reporting-events-processor-svc
+      versionfilter:
+        kind: semver
+        pattern: ^2.0.0
+  reporting-hub-bop-experience-api-svc:
+    kind: dockerimage
+    spec:
+      image: mojaloop/reporting-hub-bop-experience-api-svc
+      versionfilter:
+        kind: semver
+        pattern: ^2.0.2
+  reporting-hub-bop-role-ui:
+    kind: dockerimage
+    spec:
+      image: mojaloop/reporting-hub-bop-role-ui
+      versionfilter:
+        kind: semver
+        pattern: ^1.5.3
+  reporting-hub-bop-settlements-ui:
+    kind: dockerimage
+    spec:
+      image: mojaloop/reporting-hub-bop-settlements-ui
+      versionfilter:
+        kind: semver
+        pattern: ^0.0.17
+  reporting-hub-bop-shell:
+    kind: dockerimage
+    spec:
+      image: mojaloop/reporting-hub-bop-shell
+      versionfilter:
+        kind: semver
+        pattern: ^2.2.3
+  reporting-hub-bop-trx-ui:
+    kind: dockerimage
+    spec:
+      image: mojaloop/reporting-hub-bop-trx-ui
+      versionfilter:
+        kind: semver
+        pattern: ^1.7.2
+  reporting:
+    kind: dockerimage
+    spec:
+      image: mojaloop/reporting
+      versionfilter:
+        kind: semver
+        pattern: ^11.0.0
+  role-assignment-service:
+    kind: dockerimage
+    spec:
+      image: mojaloop/role-assignment-service
+      versionfilter:
+        kind: semver
+        pattern: ^2.1.0
+  reporting-hub-bop-positions-ui:
+    kind: dockerimage
+    spec:
+      image: vijayinfitx/reporting-hub-bop-positions-ui
+      versionfilter:
+        kind: semver
+        pattern: ^0.0.7
+  event-sidecar:
+    kind: dockerimage
+    spec:
+      image: mojaloop/event-sidecar
+      versionfilter:
+        kind: semver
+        pattern: ^11.0.1
+  ml-testing-toolkit-client-lib:
+    kind: dockerimage
+    spec:
+      image: mojaloop/ml-testing-toolkit-client-lib
+      versionfilter:
+        kind: semver
+        pattern: ^1.2.2
+  ml-testing-toolkit-ui:
+    kind: dockerimage
+    spec:
+      image: mojaloop/ml-testing-toolkit-ui
+      versionfilter:
+        kind: semver
+        pattern: ^15.5.0
+targets:
+  mojaloop-simulator:
+    kind: yaml
+    sourceid: mojaloop-simulator
+    spec:
+      engine: yamlpath
+      file: mojaloop-values-override.yaml
+      key: $.DEFINE.mojaloop-simulator.image.tag
+  simulator:
+    kind: yaml
+    sourceid: simulator
+    spec:
+      engine: yamlpath
+      file: mojaloop-values-override.yaml
+      key: $.DEFINE.simulator.image.tag
+  central-settlement:
+    kind: yaml
+    sourceid: central-settlement
+    spec:
+      engine: yamlpath
+      file: mojaloop-values-override.yaml
+      key: $.DEFINE.central-settlement.image.tag
+  reporting-hub-bop-api-svc:
+    kind: yaml
+    sourceid: reporting-hub-bop-api-svc
+    spec:
+      engine: yamlpath
+      file: mojaloop-values-override.yaml
+      key: $.DEFINE.reporting-hub-bop-api-svc.image.tag
+  reporting-events-processor-svc:
+    kind: yaml
+    sourceid: reporting-events-processor-svc
+    spec:
+      engine: yamlpath
+      file: mojaloop-values-override.yaml
+      key: $.DEFINE.reporting-events-processor-svc.image.tag
+  reporting-hub-bop-experience-api-svc:
+    kind: yaml
+    sourceid: reporting-hub-bop-experience-api-svc
+    spec:
+      engine: yamlpath
+      file: mojaloop-values-override.yaml
+      key: $.DEFINE.reporting-hub-bop-experience-api-svc.image.tag
+  reporting-hub-bop-role-ui:
+    kind: yaml
+    sourceid: reporting-hub-bop-role-ui
+    spec:
+      engine: yamlpath
+      file: mojaloop-values-override.yaml
+      key: $.DEFINE.reporting-hub-bop-role-ui.image.tag
+  reporting-hub-bop-settlements-ui:
+    kind: yaml
+    sourceid: reporting-hub-bop-settlements-ui
+    spec:
+      engine: yamlpath
+      file: mojaloop-values-override.yaml
+      key: $.DEFINE.reporting-hub-bop-settlements-ui.image.tag
+  reporting-hub-bop-shell:
+    kind: yaml
+    sourceid: reporting-hub-bop-shell
+    spec:
+      engine: yamlpath
+      file: mojaloop-values-override.yaml
+      key: $.DEFINE.reporting-hub-bop-shell.image.tag
+  reporting-hub-bop-trx-ui:
+    kind: yaml
+    sourceid: reporting-hub-bop-trx-ui
+    spec:
+      engine: yamlpath
+      file: mojaloop-values-override.yaml
+      key: $.DEFINE.reporting-hub-bop-trx-ui.image.tag
+  reporting:
+    kind: yaml
+    sourceid: reporting
+    spec:
+      engine: yamlpath
+      file: mojaloop-values-override.yaml
+      key: $.DEFINE.reporting.image.tag
+  role-assignment-service:
+    kind: yaml
+    sourceid: role-assignment-service
+    spec:
+      engine: yamlpath
+      file: mojaloop-values-override.yaml
+      key: $.DEFINE.role-assignment-service.image.tag
+  reporting-hub-bop-positions-ui:
+    kind: yaml
+    sourceid: reporting-hub-bop-positions-ui
+    spec:
+      engine: yamlpath
+      file: mojaloop-values-override.yaml
+      key: $.DEFINE.reporting-hub-bop-positions-ui.image.tag
+  event-sidecar:
+    kind: yaml
+    sourceid: event-sidecar
+    spec:
+      engine: yamlpath
+      file: mojaloop-values-override.yaml
+      key: $.DEFINE.event-sidecar.image.tag
+  ml-testing-toolkit-client-lib:
+    kind: yaml
+    sourceid: ml-testing-toolkit-client-lib
+    spec:
+      engine: yamlpath
+      file: mojaloop-values-override.yaml
+      key: $.DEFINE.ml-testing-toolkit-client-lib.image.tag
+  ml-testing-toolkit-ui:
+    kind: yaml
+    sourceid: ml-testing-toolkit-ui
+    spec:
+      engine: yamlpath
+      file: mojaloop-values-override.yaml
+      key: $.DEFINE.ml-testing-toolkit-ui.image.tag
+  sdk-scheme-adapter:
+    kind: yaml
+    sourceid: sdk-scheme-adapter
+    spec:
+      engine: yamlpath
+      file: mojaloop-values-override.yaml
+      key: $.DEFINE.sdk-scheme-adapter.image.tag

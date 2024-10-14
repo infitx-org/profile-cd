@@ -1,0 +1,16 @@
+name: Update Mojaloop ml-api-adapter
+sources:
+  image:
+    kind: dockerimage
+    spec:
+      image: mojaloop/ml-api-adapter
+      versionfilter:
+        kind: semver
+        pattern: '>=14.1.0-snapshot.25 <=14.1.0-snapshot.9999'
+targets:
+  yaml:
+    kind: yaml
+    spec:
+      engine: yamlpath
+      file: mojaloop-values-override.yaml
+      key: $.DEFINE.ml-api-adapter.image.tag

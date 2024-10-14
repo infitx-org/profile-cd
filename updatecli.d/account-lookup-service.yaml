@@ -1,0 +1,16 @@
+name: Update Mojaloop account-lookup-service
+sources:
+  image:
+    kind: dockerimage
+    spec:
+      image: mojaloop/account-lookup-service
+      versionfilter:
+        kind: semver
+        pattern: '>=15.4.0-snapshot.31 <=15.4.0-snapshot.9999'
+targets:
+  yaml:
+    kind: yaml
+    spec:
+      engine: yamlpath
+      file: mojaloop-values-override.yaml
+      key: $.DEFINE.account-lookup-service.image.tag
