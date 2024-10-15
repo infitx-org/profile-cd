@@ -2,6 +2,11 @@ name: Update Mojaloop images
 
 on:
   workflow_dispatch:
+    inputs:
+      image:
+        description: Published image
+      tag:
+        description: Updated tag
   schedule:
     - cron: '0 0 * * *'
 
