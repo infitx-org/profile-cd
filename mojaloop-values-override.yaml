@@ -1,7 +1,7 @@
 DEFINE:
   account-lookup-service: &accountImage
     image:
-      tag: v15.4.0-snapshot.32
+      tag: v15.4.0-snapshot.31
   central-ledger: &ledgerImage
     image: &ledgerImageTag
       tag: v17.8.0-snapshot.34

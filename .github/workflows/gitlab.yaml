@@ -5,9 +5,9 @@ on:
     branches:
       - main
     paths:
-      - mojaloop-values-overrides.yaml
-      - pm4ml-values-overrides.yaml
-      - proxy-values-overrides.yaml
+      - mojaloop-values-override.yaml
+      - pm4ml-values-override.yaml
+      - proxy-values-override.yaml
 
 jobs:
   gitlab:
