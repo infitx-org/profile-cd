@@ -24,4 +24,4 @@ jobs:
             -F token=$GITLAB_TOKEN \
             -F ref=main \
             -F "variables[UPDATECLI]=true" \
-            {{ matrix.project.url }}
+            ${{ matrix.project.url }}
