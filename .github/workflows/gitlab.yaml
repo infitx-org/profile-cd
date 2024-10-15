@@ -1,0 +1,25 @@
+name: Trigger GitLab Pipeline
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ./*.yaml
+
+jobs:
+  gitlab:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        project: ${{ fromJson(vars.projects) }}
+    steps:
+      - name: Trigger Pipeline in ${{ matrix.project.name }}
+        env:
+          GITLAB_TOKEN: ${{ secrets[matrix.project.secret] }}
+        run: |
+          curl -X POST \
+            -F token=$GITLAB_TOKEN \
+            -F ref=main \
+            -F "variables[UPDATECLI]=true" \
+            {{ matrix.project.url }}
