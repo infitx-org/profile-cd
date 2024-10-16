@@ -40,3 +40,4 @@ jobs:
         with:
           pull-request-number: ${{ steps.create_pr.outputs.pull-request-number }}
           merge-method: squash
+          token: ${{ secrets.MERGE_TOKEN }}
