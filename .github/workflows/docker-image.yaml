@@ -28,7 +28,15 @@ jobs:
         run: updatecli apply
 
       - name: Create pull request
+        id: create_pr
         uses: peter-evans/create-pull-request@v7
         with:
           commit-message: Update Mojaloop image versions
           title: Update Mojaloop image versions
+
+      - name: Auto merge pull request
+        if: steps.create_pr.outputs.pull-request-number
+        uses: peter-evans/enable-pull-request-automerge@v3
+        with:
+          pull-request-number: ${{ steps.create_pr.outputs.pull-request-number }}
+          merge-method: squash
