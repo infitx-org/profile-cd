@@ -1,5 +1,5 @@
-name: Update Mojaloop image tags
-run-name: Update Mojaloop image tags (${{ github.event.inputs.tag || github.event_name }}) - ${{ github.event.inputs.image }}
+name: Update image tags and Helm versions
+run-name: Update image tags and Helm versions (${{ github.event.inputs.tag || github.event_name }}) - ${{ github.event.inputs.image }}
 
 on:
   workflow_dispatch:
@@ -35,16 +35,16 @@ jobs:
 
       - name: Update image tags
         run: |
-          echo "Updating Mojaloop image tags:" > update.log
+          echo "Updating image tags and Helm versions:" > update.log
           echo "${{ github.event.inputs.upstream }}" > update.log
-          updatecli apply |& tee /dev/tty | grep -o '[^.]*\.image\.tag" updated from .*,' | sed -e 's/[",]//g;s/^/- /' >> update.log
+          updatecli apply |& tee /dev/tty | grep -o '[^._]*(\.image\.tag|_chart_version)" updated from .*,' | sed -e 's/[",]//g;s/^/- /' >> update.log
 
       - name: Create pull request
         id: create_pr
         uses: peter-evans/create-pull-request@v7
         with:
-          commit-message: Update Mojaloop image tags (${{ github.event.inputs.tag || github.event_name }}) - ${{ github.event.inputs.image }}
-          title: Update Mojaloop image tags (${{ github.event.inputs.tag || github.event_name }}) - ${{ github.event.inputs.image }}
+          commit-message: Update image tags and Helm versions (${{ github.event.inputs.tag || github.event_name }}) - ${{ github.event.inputs.image }}
+          title: Update image tags and Helm versions (${{ github.event.inputs.tag || github.event_name }}) - ${{ github.event.inputs.image }}
           body-path: update.log
 
       - name: Auto merge pull request

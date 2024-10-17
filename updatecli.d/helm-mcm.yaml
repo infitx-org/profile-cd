@@ -1,0 +1,17 @@
+name: Update Connection Manager Helm chart version
+sources:
+  lastRelease:
+    kind: helmchart
+    spec:
+      url: https://pm4ml.github.io/helm
+      name: connection-manager
+      versionfilter:
+        kind: semver
+        pattern: ^1.2.0
+targets:
+  yaml:
+    kind: yaml
+    spec:
+      engine: yamlpath
+      file: mojaloop-vars.yaml
+      key: $.mcm_chart_version

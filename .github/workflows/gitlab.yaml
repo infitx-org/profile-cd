@@ -8,6 +8,7 @@ on:
       - mojaloop-values-override.yaml
       - pm4ml-values-override.yaml
       - proxy-values-override.yaml
+      - mojaloop-vars.yaml
 
 jobs:
   gitlab:

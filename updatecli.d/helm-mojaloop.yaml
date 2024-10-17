@@ -1,0 +1,17 @@
+name: Update Mojaloop Helm chart version
+sources:
+  lastRelease:
+    kind: helmchart
+    spec:
+      url: https://mojaloop.github.io/helm/repo
+      name: mojaloop
+      versionfilter:
+        kind: semver
+        pattern: '>=16.2.2-iso.0 <=16.2.2-iso.999999'
+targets:
+  yaml:
+    kind: yaml
+    spec:
+      engine: yamlpath
+      file: mojaloop-vars.yaml
+      key: $.mojaloop_chart_version
