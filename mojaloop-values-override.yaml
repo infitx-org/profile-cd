@@ -1,31 +1,35 @@
-DEFINE:
-  account-lookup-service: &accountImage
-    image:
-      tag: v15.6.0-iso.1
-  central-ledger: &ledgerImage
-    image: &ledgerImageTag
-      tag: v17.9.0-iso.1
-  ml-api-adapter: &adapterImage
-    image:
-      tag: v14.2.0-iso.2
-  ml-testing-toolkit: &toolkitBackendImage
-    image:
-      tag: v17.3.1
-  ml-testing-toolkit-ui: &toolkitFrontendImage
-    image:
-      tag: v15.6.0
-  quoting-service: &quotingImage
-    image:
-      tag: v15.9.0-iso.2
-  sdk-scheme-adapter: &schemeAdapterImage
-    image:
-      tag: v23.6.0-snapshot.17
-  transaction-request-service: &transactionRequestImage
-    image:
-      tag: v14.3.1
-  mojaloop-simulator: &simulatorImage
-    image:
-      tag: v15.1.1
+_DEFINE:
+  CONTINUOUS_DEPLOYMENT:
+    account-lookup-service: &accountImage
+      image:
+        tag: v15.6.0-iso.1
+    central-ledger: &ledgerImage
+      image: &ledgerImageTag
+        tag: v17.9.0-iso.1
+    ml-api-adapter: &adapterImage
+      image:
+        tag: v14.2.0-iso.2
+    ml-testing-toolkit: &toolkitBackendImage
+      image:
+        tag: v17.3.1
+    ml-testing-toolkit-ui: &toolkitFrontendImage
+      image:
+        tag: v15.6.0
+    quoting-service: &quotingImage
+      image:
+        tag: v15.9.0-iso.2
+    sdk-scheme-adapter: &schemeAdapterImage
+      image:
+        tag: v23.6.0-snapshot.17
+    transaction-request-service: &transactionRequestImage
+      image:
+        tag: v14.3.1
+    mojaloop-simulator: &simulatorImage
+      image:
+        tag: v15.1.1
+    central-settlement: &settlementImage
+      image:
+        tag: v17.0.0-snapshot.10
 ml-testing-toolkit:
   ml-testing-toolkit-backend: *toolkitBackendImage
   ml-testing-toolkit-frontend: *toolkitFrontendImage
@@ -63,3 +67,8 @@ mojaloop-simulator:
     testfsp2: *simulatorConfig
     testfsp3: *simulatorConfig
     testfsp4: *simulatorConfig
+centralsettlement:
+  centralsettlement-service: *settlementImage
+  centralsettlement-handler-deferredsettlement: *settlementImage
+  centralsettlement-handler-grosssettlement: *settlementImage
+  centralsettlement-handler-rules: *settlementImage

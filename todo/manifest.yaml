@@ -112,116 +112,116 @@ targets:
     spec:
       engine: yamlpath
       file: mojaloop-values-override.yaml
-      key: $.DEFINE.mojaloop-simulator.image.tag
+      key: $._DEFINE.CONTINUOUS_DEPLOYMENT.mojaloop-simulator.image.tag
   simulator:
     kind: yaml
     sourceid: simulator
     spec:
       engine: yamlpath
       file: mojaloop-values-override.yaml
-      key: $.DEFINE.simulator.image.tag
+      key: $._DEFINE.CONTINUOUS_DEPLOYMENT.simulator.image.tag
   central-settlement:
     kind: yaml
     sourceid: central-settlement
     spec:
       engine: yamlpath
       file: mojaloop-values-override.yaml
-      key: $.DEFINE.central-settlement.image.tag
+      key: $._DEFINE.CONTINUOUS_DEPLOYMENT.central-settlement.image.tag
   reporting-hub-bop-api-svc:
     kind: yaml
     sourceid: reporting-hub-bop-api-svc
     spec:
       engine: yamlpath
       file: mojaloop-values-override.yaml
-      key: $.DEFINE.reporting-hub-bop-api-svc.image.tag
+      key: $._DEFINE.CONTINUOUS_DEPLOYMENT.reporting-hub-bop-api-svc.image.tag
   reporting-events-processor-svc:
     kind: yaml
     sourceid: reporting-events-processor-svc
     spec:
       engine: yamlpath
       file: mojaloop-values-override.yaml
-      key: $.DEFINE.reporting-events-processor-svc.image.tag
+      key: $._DEFINE.CONTINUOUS_DEPLOYMENT.reporting-events-processor-svc.image.tag
   reporting-hub-bop-experience-api-svc:
     kind: yaml
     sourceid: reporting-hub-bop-experience-api-svc
     spec:
       engine: yamlpath
       file: mojaloop-values-override.yaml
-      key: $.DEFINE.reporting-hub-bop-experience-api-svc.image.tag
+      key: $._DEFINE.CONTINUOUS_DEPLOYMENT.reporting-hub-bop-experience-api-svc.image.tag
   reporting-hub-bop-role-ui:
     kind: yaml
     sourceid: reporting-hub-bop-role-ui
     spec:
       engine: yamlpath
       file: mojaloop-values-override.yaml
-      key: $.DEFINE.reporting-hub-bop-role-ui.image.tag
+      key: $._DEFINE.CONTINUOUS_DEPLOYMENT.reporting-hub-bop-role-ui.image.tag
   reporting-hub-bop-settlements-ui:
     kind: yaml
     sourceid: reporting-hub-bop-settlements-ui
     spec:
       engine: yamlpath
       file: mojaloop-values-override.yaml
-      key: $.DEFINE.reporting-hub-bop-settlements-ui.image.tag
+      key: $._DEFINE.CONTINUOUS_DEPLOYMENT.reporting-hub-bop-settlements-ui.image.tag
   reporting-hub-bop-shell:
     kind: yaml
     sourceid: reporting-hub-bop-shell
     spec:
       engine: yamlpath
       file: mojaloop-values-override.yaml
-      key: $.DEFINE.reporting-hub-bop-shell.image.tag
+      key: $._DEFINE.CONTINUOUS_DEPLOYMENT.reporting-hub-bop-shell.image.tag
   reporting-hub-bop-trx-ui:
     kind: yaml
     sourceid: reporting-hub-bop-trx-ui
     spec:
       engine: yamlpath
       file: mojaloop-values-override.yaml
-      key: $.DEFINE.reporting-hub-bop-trx-ui.image.tag
+      key: $._DEFINE.CONTINUOUS_DEPLOYMENT.reporting-hub-bop-trx-ui.image.tag
   reporting:
     kind: yaml
     sourceid: reporting
     spec:
       engine: yamlpath
       file: mojaloop-values-override.yaml
-      key: $.DEFINE.reporting.image.tag
+      key: $._DEFINE.CONTINUOUS_DEPLOYMENT.reporting.image.tag
   role-assignment-service:
     kind: yaml
     sourceid: role-assignment-service
     spec:
       engine: yamlpath
       file: mojaloop-values-override.yaml
-      key: $.DEFINE.role-assignment-service.image.tag
+      key: $._DEFINE.CONTINUOUS_DEPLOYMENT.role-assignment-service.image.tag
   reporting-hub-bop-positions-ui:
     kind: yaml
     sourceid: reporting-hub-bop-positions-ui
     spec:
       engine: yamlpath
       file: mojaloop-values-override.yaml
-      key: $.DEFINE.reporting-hub-bop-positions-ui.image.tag
+      key: $._DEFINE.CONTINUOUS_DEPLOYMENT.reporting-hub-bop-positions-ui.image.tag
   event-sidecar:
     kind: yaml
     sourceid: event-sidecar
     spec:
       engine: yamlpath
       file: mojaloop-values-override.yaml
-      key: $.DEFINE.event-sidecar.image.tag
+      key: $._DEFINE.CONTINUOUS_DEPLOYMENT.event-sidecar.image.tag
   ml-testing-toolkit-client-lib:
     kind: yaml
     sourceid: ml-testing-toolkit-client-lib
     spec:
       engine: yamlpath
       file: mojaloop-values-override.yaml
-      key: $.DEFINE.ml-testing-toolkit-client-lib.image.tag
+      key: $._DEFINE.CONTINUOUS_DEPLOYMENT.ml-testing-toolkit-client-lib.image.tag
   ml-testing-toolkit-ui:
     kind: yaml
     sourceid: ml-testing-toolkit-ui
     spec:
       engine: yamlpath
       file: mojaloop-values-override.yaml
-      key: $.DEFINE.ml-testing-toolkit-ui.image.tag
+      key: $._DEFINE.CONTINUOUS_DEPLOYMENT.ml-testing-toolkit-ui.image.tag
   sdk-scheme-adapter:
     kind: yaml
     sourceid: sdk-scheme-adapter
     spec:
       engine: yamlpath
       file: mojaloop-values-override.yaml
-      key: $.DEFINE.sdk-scheme-adapter.image.tag
+      key: $._DEFINE.CONTINUOUS_DEPLOYMENT.sdk-scheme-adapter.image.tag

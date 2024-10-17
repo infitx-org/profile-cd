@@ -13,4 +13,4 @@ targets:
     spec:
       engine: yamlpath
       file: mojaloop-values-override.yaml
-      key: $.DEFINE.quoting-service.image.tag
+      key: $._DEFINE.CONTINUOUS_DEPLOYMENT.quoting-service.image.tag

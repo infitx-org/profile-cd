@@ -13,4 +13,4 @@ targets:
     spec:
       engine: yamlpath
       file: mojaloop-values-override.yaml
-      key: $.DEFINE.central-ledger.image.tag
+      key: $._DEFINE.CONTINUOUS_DEPLOYMENT.central-ledger.image.tag

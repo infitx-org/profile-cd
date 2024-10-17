@@ -13,4 +13,4 @@ targets:
     spec:
       engine: yamlpath
       file: mojaloop-values-override.yaml
-      key: $.DEFINE.sdk-scheme-adapter.image.tag
+      key: $._DEFINE.CONTINUOUS_DEPLOYMENT.sdk-scheme-adapter.image.tag

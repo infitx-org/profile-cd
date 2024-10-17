@@ -13,4 +13,4 @@ targets:
     spec:
       engine: yamlpath
       file: proxy-values-override.yaml
-      key: $.DEFINE.management-api.image.tag
+      key: $._DEFINE.CONTINUOUS_DEPLOYMENT.management-api.image.tag

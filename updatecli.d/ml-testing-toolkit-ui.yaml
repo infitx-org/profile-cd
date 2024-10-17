@@ -13,4 +13,4 @@ targets:
     spec:
       engine: yamlpath
       file: mojaloop-values-override.yaml
-      key: $.DEFINE.ml-testing-toolkit-ui.image.tag
+      key: $._DEFINE.CONTINUOUS_DEPLOYMENT.ml-testing-toolkit-ui.image.tag

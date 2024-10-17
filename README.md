@@ -28,7 +28,7 @@ the following chain of events:
 1. This workflow checks the Docker Hub for the latest Mojaloop docker images that
    fulfill the semver conditions specified in the manifest files in the
    [updatecli.d](updatecli.d) directory.
-1. If there are new images that fulfill the conditions, the workflow updates the
+1. If there are new images that fulfill the conditions, the workflow
    creates a pull request with the latest versions set in the `*-override.yaml`
    files, which is automatically merged.
 1. The merge starts the [gitlab.yaml](.github/workflows/gitlab.yaml) workflow,
