@@ -6,7 +6,7 @@ sources:
       image: mojaloop/central-settlement
       versionfilter:
         kind: semver
-        pattern: '>=v17.0.0-snapshot.0 <=v17.0.0-snapshot.9999'
+        pattern: '>=17.0.0-snapshot.0 <=17.0.0-snapshot.9999'
 targets:
   yaml:
     kind: yaml
