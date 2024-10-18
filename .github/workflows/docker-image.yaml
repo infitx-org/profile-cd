@@ -38,7 +38,7 @@ jobs:
         run: |
           echo "Updating image tags and Helm versions:" > update.log
           echo "${{ github.event.inputs.upstream }}" > update.log
-          updatecli apply |& tee /dev/tty | grep -Eo '[^._]*(\.image\.tag|_chart_version)" updated from .*,' | sed -e 's/[",]//g;s/^/- /' >> update.log
+          updatecli apply |& tee >(grep -Eo '[^._]*(\.image\.tag|_chart_version)" updated from .*,' | sed -e 's/[",]//g;s/^/- /' >> update.log)
 
       - name: Create pull request
         id: create_pr
