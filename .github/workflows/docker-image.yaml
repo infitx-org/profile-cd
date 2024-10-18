@@ -1,14 +1,15 @@
 name: Update image tags and Helm versions
-run-name: Update image tags and Helm versions (${{ github.event.inputs.tag || github.event_name }}) - ${{ github.event.inputs.image }}
+run-name: Update ${{ github.event.inputs.image != 0 && format('Docker image ${0}:${1}', github.event.inputs.image, github.event.inputs.tag) || github.event.inputs.chart != 0 && format('Helm chart ${0}:${1}', github.event.inputs.chart, github.event.inputs.tag) || format('[${0}]', github.event_name) }}
 
 on:
   workflow_dispatch:
     inputs:
       image:
-        description: Published image
-        default: '*'
+        description: Published Docker image
+      chart:
+        description: Published Helm chart
       tag:
-        description: Updated tag
+        description: Updated tag/version
       upstream:
         description: Upstream job URL
   push:
@@ -43,8 +44,8 @@ jobs:
         id: create_pr
         uses: peter-evans/create-pull-request@v7
         with:
-          commit-message: Update image tags and Helm versions (${{ github.event.inputs.tag || github.event_name }}) - ${{ github.event.inputs.image }}
-          title: Update image tags and Helm versions (${{ github.event.inputs.tag || github.event_name }}) - ${{ github.event.inputs.image }}
+          commit-message: Update ${{ github.event.inputs.image != 0 && format('Docker image ${0}:${1}', github.event.inputs.image, github.event.inputs.tag) || github.event.inputs.chart != 0 && format('Helm chart ${0}:${1}', github.event.inputs.chart, github.event.inputs.tag) || format('[${0}]', github.event_name) }}
+          title: Update ${{ github.event.inputs.image != 0 && format('Docker image ${0}:${1}', github.event.inputs.image, github.event.inputs.tag) || github.event.inputs.chart != 0 && format('Helm chart ${0}:${1}', github.event.inputs.chart, github.event.inputs.tag) || format('[${0}]', github.event_name) }}
           body-path: update.log
 
       - name: Auto merge pull request
