@@ -1,5 +1,5 @@
 name: Update image tags and Helm versions
-run-name: Update ${{ github.event.inputs.image != 0 && format('Docker image ${0} (${1})', github.event.inputs.image, github.event.inputs.tag) || github.event.inputs.chart != 0 && format('Helm chart ${0} (${1})', github.event.inputs.chart, github.event.inputs.tag) || format('[${0}]', github.event_name) }}
+run-name: Update ${{ github.event.inputs.image != 0 && format('Docker image {0} ({1})', github.event.inputs.image, github.event.inputs.tag) || github.event.inputs.chart != 0 && format('Helm chart {0} ({1})', github.event.inputs.chart, github.event.inputs.tag) || format('[{0}]', github.event_name) }}
 
 on:
   workflow_dispatch:
@@ -44,8 +44,8 @@ jobs:
         id: create_pr
         uses: peter-evans/create-pull-request@v7
         with:
-          commit-message: Update ${{ github.event.inputs.image != 0 && format('Docker image ${0} (${1})', github.event.inputs.image, github.event.inputs.tag) || github.event.inputs.chart != 0 && format('Helm chart ${0} (${1})', github.event.inputs.chart, github.event.inputs.tag) || format('[${0}]', github.event_name) }}
-          title: Update ${{ github.event.inputs.image != 0 && format('Docker image ${0} (${1})', github.event.inputs.image, github.event.inputs.tag) || github.event.inputs.chart != 0 && format('Helm chart ${0} (${1})', github.event.inputs.chart, github.event.inputs.tag) || format('[${0}]', github.event_name) }}
+          commit-message: Update ${{ github.event.inputs.image != 0 && format('Docker image {0} ({1})', github.event.inputs.image, github.event.inputs.tag) || github.event.inputs.chart != 0 && format('Helm chart {0} ({1})', github.event.inputs.chart, github.event.inputs.tag) || format('[{0}]', github.event_name) }}
+          title: Update ${{ github.event.inputs.image != 0 && format('Docker image {0} ({1})', github.event.inputs.image, github.event.inputs.tag) || github.event.inputs.chart != 0 && format('Helm chart {0} ({1})', github.event.inputs.chart, github.event.inputs.tag) || format('[{0}]', github.event_name) }}
           body-path: update.log
 
       - name: Auto merge pull request
