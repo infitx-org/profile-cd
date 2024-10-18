@@ -36,7 +36,8 @@ jobs:
 
       - name: Update image tags
         run: |
-          echo "Updating image tags and Helm versions:" > update.log
+          ecno "# Continuous Deployment" > update.log
+          echo "Updating Docker image tags and Helm versions:" >> update.log
           updatecli apply |& tee >(grep -Eo '[^._]*(\.image\.tag|_chart_version)" updated from .*,' | sed -e 's/[",]//g;s/^/- /' >> update.log)
           if [ ! -z "${{ github.event.inputs.upstream }}"];
             echo "---" >> update.log
