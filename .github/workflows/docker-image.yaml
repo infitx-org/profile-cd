@@ -39,7 +39,7 @@ jobs:
           echo "# Continuous Deployment" > update.log
           echo "Updating Docker image tags and Helm versions:" >> update.log
           updatecli apply |& tee >(grep -Eo '[^._]*(\.image\.tag|_chart_version)" updated from .*,' | sed -e 's/[",]//g;s/^/- /' >> update.log)
-          if [ ! -z "${{ github.event.inputs.upstream }}"];
+          if [ ! -z "${{ github.event.inputs.upstream }}"] ; then
             echo "---" >> update.log
             echo "Triggered by: ${{ github.event.inputs.upstream }}" >> update.log
           fi
