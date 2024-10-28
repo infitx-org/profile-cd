@@ -45,7 +45,9 @@ This chain of events relies on certain configurations:
    ![trigger profile-cd token](img/image.png)
 
    This token is set in an environment variable prefixed with `DOWNSTREAM_IMAGE_`
-   in the Mojaloop Circle CI `org-global` context:
+   in the Mojaloop Circle CI `org-global` context. The token if prefixed with
+   the `organization/repository:` where it needs to trigger the workflow.
+   For example `infinitx-org/profile-cd:github_pat_xxx`:
 
    ![circle ci variable](img/image-1.png)
 
