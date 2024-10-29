@@ -14,7 +14,7 @@ _DEFINE:
         tag: v18.2.0
     ml-testing-toolkit-ui: &toolkitFrontendImage
       image:
-        tag: v15.6.0
+        tag: v16.0.0
     quoting-service: &quotingImage
       image:
         tag: v15.9.0-iso.10
