@@ -20,7 +20,7 @@ _DEFINE:
         tag: v15.9.0-iso.10
     sdk-scheme-adapter: &schemeAdapterImage
       image:
-        tag: v23.6.0-snapshot.17
+        tag: v23.6.0-snapshot.100
     transaction-request-service: &transactionRequestImage
       image:
         tag: v14.3.1
