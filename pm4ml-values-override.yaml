@@ -11,7 +11,7 @@ scheme-adapter:
 ttk:
   ml-testing-toolkit-backend:
     image:
-      tag: v17.3.1
+      tag: v18.2.2
   ml-testing-toolkit-frontend:
     image:
-      tag: v15.6.0
+      tag: v16.0.1
