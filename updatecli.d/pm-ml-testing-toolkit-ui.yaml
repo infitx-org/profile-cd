@@ -6,7 +6,7 @@ sources:
       image: mojaloop/ml-testing-toolkit-ui
       versionfilter:
         kind: semver
-        pattern: ^15.6.0
+        pattern: ^16.0.0
 targets:
   yaml:
     kind: yaml
