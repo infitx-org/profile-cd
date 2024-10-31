@@ -11,13 +11,13 @@ _DEFINE:
         tag: v14.2.0-iso.7
     ml-testing-toolkit: &toolkitBackendImage
       image:
-        tag: v18.2.3
+        tag: v18.2.4
     ml-testing-toolkit-ui: &toolkitFrontendImage
       image:
         tag: v16.0.2
     quoting-service: &quotingImage
       image:
-        tag: v15.9.0-iso.11
+        tag: v15.9.0-iso.12
     sdk-scheme-adapter: &schemeAdapterImage
       image:
         tag: v23.6.0-snapshot.31
