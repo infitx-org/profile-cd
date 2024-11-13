@@ -2,7 +2,7 @@ _DEFINE:
   CONTINUOUS_DEPLOYMENT:
     account-lookup-service: &accountImage
       image:
-        tag: v15.6.0-iso.8
+        tag: v15.6.0-iso.9
     central-ledger: &ledgerImage
       image: &ledgerImageTag
         tag: v17.9.0-iso.2
@@ -17,7 +17,7 @@ _DEFINE:
         tag: v16.0.2
     quoting-service: &quotingImage
       image:
-        tag: v15.9.0-iso.12
+        tag: v15.9.0-iso.13
     sdk-scheme-adapter: &schemeAdapterImage
       image:
         tag: v23.6.0-snapshot.33
