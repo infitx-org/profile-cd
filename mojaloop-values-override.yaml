@@ -11,7 +11,7 @@ _DEFINE:
         tag: v14.2.0-iso.9
     ml-testing-toolkit: &toolkitBackendImage
       image:
-        tag: v18.5.0
+        tag: v18.5.1
     ml-testing-toolkit-ui: &toolkitFrontendImage
       image:
         tag: v16.0.4
