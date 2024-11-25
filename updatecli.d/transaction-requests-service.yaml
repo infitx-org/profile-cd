@@ -13,4 +13,4 @@ targets:
     spec:
       engine: yamlpath
       file: mojaloop-values-override.yaml
-      key: $._DEFINE.CONTINUOUS_DEPLOYMENT.transaction-request-service.image.tag
+      key: $._DEFINE.CONTINUOUS_DEPLOYMENT.transaction-requests-service.image.tag

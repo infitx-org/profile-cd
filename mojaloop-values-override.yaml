@@ -21,7 +21,7 @@ _DEFINE:
     sdk-scheme-adapter: &schemeAdapterImage
       image:
         tag: v23.6.0-iso.8
-    transaction-request-service: &transactionRequestImage
+    transaction-requests-service: &transactionRequestsImage
       image:
         tag: v14.3.1
     mojaloop-simulator: &simulatorImage
@@ -55,7 +55,7 @@ centralledger:
     config:
       batch_processing_enabled: true
   centralledger-handler-admin-transfer: *ledgerImage
-transaction-request-service: *transactionRequestImage
+transaction-requests-service: *transactionRequestsImage
 mojaloop-simulator:
   simulators:
     payerfsp: &simulatorConfig
