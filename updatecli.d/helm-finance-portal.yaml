@@ -1,0 +1,17 @@
+name: Update Finance Portal Helm chart version
+sources:
+  lastRelease:
+    kind: helmchart
+    spec:
+      url: https://mojaloop.github.io/charts/repo
+      name: finance-portal
+      versionfilter:
+        kind: semver
+        pattern: ^4.2.5
+targets:
+  yaml:
+    kind: yaml
+    spec:
+      engine: yamlpath
+      file: mojaloop-vars.yaml
+      key: $.finance_portal_chart_version
