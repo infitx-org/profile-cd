@@ -1,0 +1,17 @@
+name: Update Reporting templates Helm chart version
+sources:
+  lastRelease:
+    kind: helmchart
+    spec:
+      url: https://mojaloop.github.io/reporting-k8s-templates
+      name: reporting-k8s-templates
+      versionfilter:
+        kind: semver
+        pattern: ^1.1.12
+targets:
+  yaml:
+    kind: yaml
+    spec:
+      engine: yamlpath
+      file: mojaloop-vars.yaml
+      key: $.reporting_templates_chart_version
