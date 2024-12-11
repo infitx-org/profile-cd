@@ -7,7 +7,7 @@ sources:
       name: finance-portal
       versionfilter:
         kind: semver
-        pattern: "^4.2.5"
+        pattern: "4.3.1-snapshot.x"
 targets:
   yaml:
     kind: yaml
