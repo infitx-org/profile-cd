@@ -5,7 +5,7 @@ _DEFINE:
         tag: v15.6.0-iso.20
     central-ledger: &ledgerImage
       image: &ledgerImageTag
-        tag: v17.9.0-iso.14
+        tag: v17.9.0-iso.15
     ml-api-adapter: &adapterImage
       image:
         tag: v15.1.0-iso.7
