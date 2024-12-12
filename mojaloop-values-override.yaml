@@ -8,7 +8,7 @@ _DEFINE:
         tag: v17.9.0-iso.14
     ml-api-adapter: &adapterImage
       image:
-        tag: v14.2.0-iso.18
+        tag: v15.1.0-iso.4
     ml-testing-toolkit: &toolkitBackendImage
       image:
         tag: v18.5.1
@@ -20,7 +20,7 @@ _DEFINE:
         tag: v15.9.0-iso.19
     sdk-scheme-adapter: &schemeAdapterImage
       image:
-        tag: v23.6.0-iso.8
+        tag: v23.6.0-iso.9
     transaction-requests-service: &transactionRequestsImage
       image:
         tag: v14.3.2
