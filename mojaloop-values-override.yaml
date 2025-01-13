@@ -8,7 +8,7 @@ _DEFINE:
         tag: v17.9.0-iso.18
     ml-api-adapter: &adapterImage
       image:
-        tag: v15.1.0-iso.12
+        tag: v15.1.0-iso.13
     ml-testing-toolkit: &toolkitBackendImage
       image:
         tag: v18.5.1
