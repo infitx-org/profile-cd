@@ -5,7 +5,7 @@ _DEFINE:
         tag: v17.0.0
     central-ledger: &ledgerImage
       image: &ledgerImageTag
-        tag: v19.0.2
+        tag: v19.0.3
     ml-api-adapter: &adapterImage
       image:
         tag: v16.0.1
@@ -17,7 +17,7 @@ _DEFINE:
         tag: v16.0.4
     quoting-service: &quotingImage
       image:
-        tag: v17.0.0
+        tag: v17.0.1
     sdk-scheme-adapter: &schemeAdapterImage
       image:
         tag: v23.6.0-iso.16
