@@ -6,7 +6,7 @@ sources:
       image: mojaloop/central-ledger
       versionfilter:
         kind: semver
-        pattern: '>=17.9.0-iso.0 <=17.9.0-iso.9999'
+        pattern: ^19.0.0
 targets:
   yaml:
     kind: yaml
