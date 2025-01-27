@@ -6,7 +6,7 @@ sources:
       image: mojaloop/sdk-scheme-adapter
       versionfilter:
         kind: semver
-        pattern: '>=23.6.0-iso.0 <=23.6.0-iso.999'
+        pattern: ^24.0.0
 targets:
   yaml:
     kind: yaml
