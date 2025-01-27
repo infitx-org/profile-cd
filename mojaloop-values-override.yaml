@@ -2,7 +2,7 @@ _DEFINE:
   CONTINUOUS_DEPLOYMENT:
     account-lookup-service: &accountImage
       image:
-        tag: v17.0.0
+        tag: v17.0.2
     central-ledger: &ledgerImage
       image: &ledgerImageTag
         tag: v19.0.5
@@ -29,7 +29,7 @@ _DEFINE:
         tag: v15.1.2
     central-settlement: &settlementImage
       image:
-        tag: v17.0.0-snapshot.21
+        tag: v17.0.0
 ml-testing-toolkit:
   ml-testing-toolkit-backend: *toolkitBackendImage
   ml-testing-toolkit-frontend: *toolkitFrontendImage
