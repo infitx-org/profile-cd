@@ -24,9 +24,12 @@ _DEFINE:
     transaction-requests-service: &transactionRequestsImage
       image:
         tag: v14.3.4
-    mojaloop-simulator: &simulatorImage
+    mojaloop-simulator: &mojaloopSimulatorImage
       image:
         tag: v15.1.2
+    simulator: &simulatorImage
+      image:
+        tag: v12.3.0-snapshot.3
     central-settlement: &settlementImage
       image:
         tag: v17.0.0
@@ -58,17 +61,18 @@ centralledger:
 transaction-requests-service: *transactionRequestsImage
 mojaloop-simulator:
   simulators:
-    payerfsp: &simulatorConfig
+    payerfsp: &mojaloopSimulatorConfig
       config:
         schemeAdapter: *schemeAdapterImage
-        backend: *simulatorImage
-    payeefsp: *simulatorConfig
-    testfsp1: *simulatorConfig
-    testfsp2: *simulatorConfig
-    testfsp3: *simulatorConfig
-    testfsp4: *simulatorConfig
+        backend: *mojaloopSimulatorImage
+    payeefsp: *mojaloopSimulatorConfig
+    testfsp1: *mojaloopSimulatorConfig
+    testfsp2: *mojaloopSimulatorConfig
+    testfsp3: *mojaloopSimulatorConfig
+    testfsp4: *mojaloopSimulatorConfig
 centralsettlement:
   centralsettlement-service: *settlementImage
   centralsettlement-handler-deferredsettlement: *settlementImage
   centralsettlement-handler-grosssettlement: *settlementImage
   centralsettlement-handler-rules: *settlementImage
+simulator: *simulatorImage
