@@ -8,10 +8,10 @@ _DEFINE:
         tag: v19.0.5
     ml-api-adapter: &adapterImage
       image:
-        tag: v16.0.1
+        tag: v16.0.2
     ml-testing-toolkit: &toolkitBackendImage
       image:
-        tag: v18.6.2
+        tag: v18.7.0
     ml-testing-toolkit-ui: &toolkitFrontendImage
       image:
         tag: v16.0.4
@@ -29,7 +29,7 @@ _DEFINE:
         tag: v15.1.2
     simulator: &simulatorImage
       image:
-        tag: v12.3.0-snapshot.3
+        tag: v12.2.3
     central-settlement: &settlementImage
       image:
         tag: v17.0.0
