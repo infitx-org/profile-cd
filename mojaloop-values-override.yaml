@@ -5,25 +5,25 @@ _DEFINE:
         tag: v17.0.2
     central-ledger: &ledgerImage
       image: &ledgerImageTag
-        tag: v19.0.5
+        tag: v19.0.6
     ml-api-adapter: &adapterImage
       image:
         tag: v16.0.2
     ml-testing-toolkit: &toolkitBackendImage
       image:
-        tag: v18.7.0
+        tag: v18.7.1
     ml-testing-toolkit-ui: &toolkitFrontendImage
       image:
         tag: v16.0.4
     quoting-service: &quotingImage
       image:
-        tag: v17.0.3
+        tag: v17.0.4
     sdk-scheme-adapter: &schemeAdapterImage
       image:
-        tag: v24.0.1
+        tag: v24.0.2
     transaction-requests-service: &transactionRequestsImage
       image:
-        tag: v14.3.4
+        tag: v14.3.5
     mojaloop-simulator: &mojaloopSimulatorImage
       image:
         tag: v15.1.2

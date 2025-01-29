@@ -7,11 +7,11 @@ experience-api:
 scheme-adapter:
   sdk-scheme-adapter-api-svc:
     image:
-      tag: v24.0.1
+      tag: v24.0.2
 ttk:
   ml-testing-toolkit-backend:
     image:
-      tag: v18.7.0
+      tag: v18.7.1
   ml-testing-toolkit-frontend:
     image:
       tag: v16.0.4
