@@ -17,7 +17,7 @@ _DEFINE:
         tag: v16.0.4
     quoting-service: &quotingImage
       image:
-        tag: v17.0.5
+        tag: v17.1.0
     sdk-scheme-adapter: &schemeAdapterImage
       image:
         tag: v24.0.3
