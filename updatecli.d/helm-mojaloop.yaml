@@ -7,7 +7,7 @@ sources:
       name: mojaloop
       versionfilter:
         kind: semver
-        pattern: '>=16.0.4-0 <16.0.4-9'
+        pattern: '>=16.0.4-00000 <16.0.4-99999'
 targets:
   yaml:
     kind: yaml
