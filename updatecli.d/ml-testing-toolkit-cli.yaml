@@ -1,0 +1,16 @@
+name: Update Mojaloop ml-testing-toolkit-cli
+sources:
+  image:
+    kind: dockerimage
+    spec:
+      image: mojaloop/ml-testing-toolkit-client-lib
+      versionfilter:
+        kind: semver
+        pattern: ^1.6.0
+targets:
+  yaml:
+    kind: yaml
+    spec:
+      engine: yamlpath
+      file: mojaloop-values-override.yaml
+      key: $._DEFINE.CONTINUOUS_DEPLOYMENT.ml-testing-toolkit-cli.image.tag
