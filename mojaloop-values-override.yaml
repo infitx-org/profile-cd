@@ -17,7 +17,7 @@ _DEFINE:
         tag: v16.1.0
     ml-testing-toolkit-cli: &toolkitBackendCli
       image:
-        tag: v1.5.0
+        tag: v1.6.0
     quoting-service: &quotingImage
       image:
         tag: v17.1.1
@@ -79,7 +79,6 @@ centralsettlement:
   centralsettlement-handler-grosssettlement: *settlementImage
   centralsettlement-handler-rules: *settlementImage
 simulator: *simulatorImage
-
 ml-ttk-test-setup: *toolkitBackendCli
 ml-ttk-test-val-gp: *toolkitBackendCli
 ml-ttk-test-val-bulk: *toolkitBackendCli
