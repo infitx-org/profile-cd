@@ -17,7 +17,7 @@ _DEFINE:
         tag: v16.1.0
     ml-testing-toolkit-cli: &toolkitBackendCli
       image:
-        tag: v1.6.0
+        tag: v1.5.0
     quoting-service: &quotingImage
       image:
         tag: v17.1.1
