@@ -14,7 +14,7 @@ _DEFINE:
         tag: v18.7.4
     ml-testing-toolkit-ui: &toolkitFrontendImage
       image:
-        tag: v16.1.1
+        tag: v16.1.2
     ml-testing-toolkit-cli: &toolkitBackendCli
       image:
         tag: v1.6.0
@@ -29,7 +29,7 @@ _DEFINE:
         tag: v14.3.6
     mojaloop-simulator: &mojaloopSimulatorImage
       image:
-        tag: v15.1.5
+        tag: v15.1.6
     simulator: &simulatorImage
       image:
         tag: v12.2.4
