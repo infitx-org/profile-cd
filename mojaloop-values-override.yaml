@@ -8,7 +8,7 @@ _DEFINE:
         tag: v19.0.6
     ml-api-adapter: &adapterImage
       image:
-        tag: v16.0.2
+        tag: v16.1.0
     ml-testing-toolkit: &toolkitBackendImage
       image:
         tag: v18.7.4
@@ -20,16 +20,16 @@ _DEFINE:
         tag: v1.6.0
     quoting-service: &quotingImage
       image:
-        tag: v17.1.1
+        tag: v17.2.0
     sdk-scheme-adapter: &schemeAdapterImage
       image:
-        tag: v24.0.8
+        tag: v24.1.0
     transaction-requests-service: &transactionRequestsImage
       image:
         tag: v14.3.6
     mojaloop-simulator: &mojaloopSimulatorImage
       image:
-        tag: v15.1.6
+        tag: v15.2.0
     simulator: &simulatorImage
       image:
         tag: v12.2.4
