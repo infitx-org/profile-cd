@@ -11,16 +11,16 @@ _DEFINE:
         tag: v16.1.1
     ml-testing-toolkit: &toolkitBackendImage
       image:
-        tag: v18.7.4
+        tag: v18.7.5
     ml-testing-toolkit-ui: &toolkitFrontendImage
       image:
         tag: v16.1.2
     ml-testing-toolkit-cli: &toolkitBackendCli
       image:
-        tag: v1.6.0
+        tag: v1.6.1
     quoting-service: &quotingImage
       image:
-        tag: v17.2.0
+        tag: v17.2.1
     sdk-scheme-adapter: &schemeAdapterImage
       image:
         tag: v24.1.2
@@ -32,7 +32,7 @@ _DEFINE:
         tag: v15.2.1
     simulator: &simulatorImage
       image:
-        tag: v12.2.4
+        tag: v12.2.5
     central-settlement: &settlementImage
       image:
         tag: v17.0.1
