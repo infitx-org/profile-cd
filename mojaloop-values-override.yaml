@@ -2,7 +2,7 @@ _DEFINE:
   CONTINUOUS_DEPLOYMENT:
     account-lookup-service: &accountImage
       image:
-        tag: v17.1.0
+        tag: v17.2.0
     central-ledger: &ledgerImage
       image: &ledgerImageTag
         tag: v19.1.1
@@ -26,7 +26,7 @@ _DEFINE:
         tag: v24.1.3
     transaction-requests-service: &transactionRequestsImage
       image:
-        tag: v14.3.6
+        tag: v14.3.9
     mojaloop-simulator: &mojaloopSimulatorImage
       image:
         tag: v15.2.1
