@@ -26,4 +26,5 @@ jobs:
             -F ref=main \
             -F "variables[CD_UPDATE_PROFILE]=true" \
             -F "variables[CD_MESSAGE]=${{ github.event.head_commit.message }}" \
+            -F "variables[CD_COMMIT_URL]=${{ github.event.head_commit.url }}" \
             ${{ matrix.project.url }}
