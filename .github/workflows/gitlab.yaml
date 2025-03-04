@@ -25,4 +25,5 @@ jobs:
             -F token=$GITLAB_TOKEN \
             -F ref=main \
             -F "variables[CD_UPDATE_PROFILE]=true" \
+            -F "variables[CD_MESSAGE]=${{ github.event.head_commit.message }}" \
             ${{ matrix.project.url }}
