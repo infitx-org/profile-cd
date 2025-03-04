@@ -4,7 +4,7 @@ _DEFINE:
       image:
         tag: v17.2.0
     central-ledger: &ledgerImage
-      image: &ledgerImageTag
+      image:
         tag: v19.1.1
     ml-api-adapter: &adapterImage
       image:
@@ -56,10 +56,7 @@ centralledger:
   centralledger-handler-transfer-position-batch: *ledgerImage
   centralledger-handler-transfer-get: *ledgerImage
   centralledger-handler-transfer-fulfil: *ledgerImage
-  centralledger-handler-timeout:
-    image: *ledgerImageTag
-    config:
-      batch_processing_enabled: true
+  centralledger-handler-timeout: *ledgerImage
   centralledger-handler-admin-transfer: *ledgerImage
 transaction-requests-service: *transactionRequestsImage
 mojaloop-simulator:
