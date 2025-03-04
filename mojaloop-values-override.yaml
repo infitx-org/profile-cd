@@ -35,7 +35,7 @@ _DEFINE:
         tag: v12.2.5
     central-settlement: &settlementImage
       image:
-        tag: v17.0.1
+        tag: v17.0.5
 ml-testing-toolkit:
   ml-testing-toolkit-backend: *toolkitBackendImage
   ml-testing-toolkit-frontend: *toolkitFrontendImage
