@@ -2,7 +2,7 @@ _DEFINE:
   CONTINUOUS_DEPLOYMENT:
     account-lookup-service: &accountImage
       image:
-        tag: v17.3.0
+        tag: v17.3.1
     central-ledger: &ledgerImage
       image:
         tag: v19.1.3
