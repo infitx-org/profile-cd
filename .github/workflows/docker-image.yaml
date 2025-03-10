@@ -1,5 +1,8 @@
 name: Update image tags and Helm versions
-run-name: Update ${{ github.event.inputs.image != 0 && format('Docker image {0} ({1})', github.event.inputs.image, github.event.inputs.tag) || github.event.inputs.chart != 0 && format('Helm chart {0} ({1})', github.event.inputs.chart, github.event.inputs.tag) || format('[{0}]', github.event_name) }}
+run-name: Update ${{
+  github.event.inputs.image != 0 && format('Docker image {0} ({1})', github.event.inputs.image, github.event.inputs.tag) ||
+  github.event.inputs.chart != 0 && format('Helm chart {0} ({1})', github.event.inputs.chart, github.event.inputs.tag) ||
+  format('[{0}]', github.event_name) }}
 
 on:
   workflow_dispatch:
@@ -55,8 +58,6 @@ jobs:
 
       - name: Auto merge pull request
         if: steps.create_pr.outputs.pull-request-number && github.event_name != 'push'
-        uses: peter-evans/enable-pull-request-automerge@v3
-        with:
-          pull-request-number: ${{ steps.create_pr.outputs.pull-request-number }}
-          merge-method: squash
-          token: ${{ secrets.MERGE_TOKEN }}
+        run: gh pr merge --squash --auto "${{ steps.create_pr.outputs.pull-request-number }}"
+        env:
+          GH_TOKEN: ${{ secrets.MERGE_TOKEN }}
