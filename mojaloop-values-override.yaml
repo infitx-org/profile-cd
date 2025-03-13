@@ -2,7 +2,7 @@ _DEFINE:
   CONTINUOUS_DEPLOYMENT:
     account-lookup-service: &accountImage
       image:
-        tag: v17.3.1
+        tag: v17.3.2
     central-ledger: &ledgerImage
       image:
         tag: v19.2.0
@@ -11,13 +11,13 @@ _DEFINE:
         tag: v16.3.2
     ml-testing-toolkit: &toolkitBackendImage
       image:
-        tag: v18.7.6
+        tag: v18.8.0
     ml-testing-toolkit-ui: &toolkitFrontendImage
       image:
         tag: v16.1.2
     ml-testing-toolkit-cli: &toolkitBackendCli
       image:
-        tag: v1.6.1
+        tag: v1.7.0
     quoting-service: &quotingImage
       image:
         tag: v17.4.0
