@@ -11,7 +11,7 @@ _DEFINE:
         tag: v16.3.2
     ml-testing-toolkit: &toolkitBackendImage
       image:
-        tag: v18.8.0
+        tag: v18.9.0
     ml-testing-toolkit-ui: &toolkitFrontendImage
       image:
         tag: v16.1.2
@@ -20,7 +20,7 @@ _DEFINE:
         tag: v1.7.0
     quoting-service: &quotingImage
       image:
-        tag: v17.4.0
+        tag: v17.5.0
     sdk-scheme-adapter: &schemeAdapterImage
       image:
         tag: v24.3.2
