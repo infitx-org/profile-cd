@@ -1,0 +1,17 @@
+name: Update TTK test cases tag
+sources:
+  latest:
+    kind: githubrelease
+    spec:
+      owner: mojaloop
+      repository: testing-toolkit-test-cases
+      versionfilter:
+        kind: semver
+        pattern: ^17.0.0
+targets:
+  yaml:
+    kind: yaml
+    spec:
+      engine: yamlpath
+      file: mojaloop-vars.yaml
+      key: $.ttk_testcases_tag
