@@ -10,6 +10,8 @@ sources:
       versionfilter:
         kind: semver
         pattern: ^17.0.0
+    transformers:
+      - trimprefix: v
 targets:
   yaml:
     kind: yaml
