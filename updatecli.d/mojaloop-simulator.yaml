@@ -1,16 +1,17 @@
-name: Update Mojaloop mojaloop-simulator
+name: Update TTK test cases tag
 sources:
-  image:
-    kind: dockerimage
+  latest:
+    kind: githubrelease
     spec:
-      image: mojaloop/mojaloop-simulator
+      owner: mojaloop
+      repository: testing-toolkit-test-cases
       versionfilter:
         kind: semver
-        pattern: ^15.1.1
+        pattern: ^17.0.0
 targets:
   yaml:
     kind: yaml
     spec:
       engine: yamlpath
-      file: mojaloop-values-override.yaml
-      key: $._DEFINE.CONTINUOUS_DEPLOYMENT.mojaloop-simulator.image.tag
+      file: mojaloop-vars.yaml
+      key: $.ttk_testcases_tag

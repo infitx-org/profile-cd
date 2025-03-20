@@ -21,7 +21,7 @@ profiles/z-continuous-deployment:
 To achieve the automatic deployment of the Mojaloop docker images, there is
 the following chain of events:
 
-1. A commit in some of the Mojaloop repositiories triggers the Circle CI pipeline
+1. A commit in some of the Mojaloop repositories triggers the Circle CI pipeline
    which builds and pushes the docker images to the Docker Hub when the tests pass.
 1. Circle CI triggers the [docker-image.yaml](.github/workflows/docker-image.yaml)
    workflow in this repository.
