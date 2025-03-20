@@ -5,6 +5,8 @@ sources:
     spec:
       owner: mojaloop
       repository: testing-toolkit-test-cases
+      token: '{{ requiredEnv "GITHUB_TOKEN" }}'
+      username: '{{ requiredEnv "GITHUB_ACTOR" }}'
       versionfilter:
         kind: semver
         pattern: ^17.0.0
