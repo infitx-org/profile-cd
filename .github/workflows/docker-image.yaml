@@ -38,6 +38,9 @@ jobs:
         uses: updatecli/updatecli-action@v2
 
       - name: Update image tags
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_ACTOR: ${{ github.actor }}
         run: |
           echo "# Continuous Deployment" > update.log
           echo "Updating Docker image tags and Helm versions:" >> update.log
