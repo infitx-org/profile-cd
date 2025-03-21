@@ -6,8 +6,8 @@ sources:
       image: mojaloop/als-msisdn-oracle-svc
       versionfilter:
         kind: semver
-        pattern: ~0.0
-        # pattern: ^0.0.1 ## this pattern didn't work for some reason
+        # pattern: ~0.0
+        pattern: "^0.0.1" ## this pattern didn't work for some reason
 targets:
   yaml:
     kind: yaml
