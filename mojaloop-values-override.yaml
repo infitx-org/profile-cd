@@ -3,6 +3,9 @@ _DEFINE:
     account-lookup-service: &accountImage
       image:
         tag: v17.6.0
+    als-msisdn-oracle:
+      image:
+        tag: v0.0.14
     central-ledger: &ledgerImage
       image:
         tag: v19.3.0
