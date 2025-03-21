@@ -7,7 +7,7 @@ sources:
       versionfilter:
         # kind: latest
         kind: semver
-        pattern: >=0.0.14
+        pattern: ~0.0
 targets:
   yaml:
     kind: yaml
