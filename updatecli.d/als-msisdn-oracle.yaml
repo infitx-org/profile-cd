@@ -5,8 +5,9 @@ sources:
     spec:
       image: mojaloop/als-msisdn-oracle-svc
       versionfilter:
-        kind: semver
-        pattern: ^0.0.0
+        kind: latest
+        # kind: semver
+        # pattern: ^0.0.0
 targets:
   yaml:
     kind: yaml
