@@ -1,0 +1,16 @@
+name: Update Mojaloop als-msisdn-oracle
+sources:
+  image:
+    kind: dockerimage
+    spec:
+      image: mojaloop/als-msisdn-oracle
+      versionfilter:
+        kind: semver
+        pattern: ^0.0.1
+targets:
+  yaml:
+    kind: yaml
+    spec:
+      engine: yamlpath
+      file: mojaloop-values-override.yaml
+      key: $._DEFINE.CONTINUOUS_DEPLOYMENT.als-msisdn-oracle.image.tag
