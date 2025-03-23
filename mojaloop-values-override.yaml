@@ -3,7 +3,7 @@ _DEFINE:
     account-lookup-service: &accountImage
       image:
         tag: v17.6.0
-    als-msisdn-oracle:  &alsOracleImage
+    als-msisdn-oracle: &alsOracleImage
       image:
         tag: v0.0.15
     central-ledger: &ledgerImage
@@ -26,7 +26,7 @@ _DEFINE:
         tag: v17.6.0
     sdk-scheme-adapter: &schemeAdapterImage
       image:
-        tag: v24.4.1
+        tag: v24.5.0
     transaction-requests-service: &transactionRequestsImage
       image:
         tag: v14.3.9
@@ -39,7 +39,6 @@ _DEFINE:
     central-settlement: &settlementImage
       image:
         tag: v17.0.6
-
 ml-testing-toolkit:
   ml-testing-toolkit-backend: *toolkitBackendImage
   ml-testing-toolkit-frontend: *toolkitFrontendImage
