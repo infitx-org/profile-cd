@@ -14,13 +14,13 @@ _DEFINE:
         tag: v16.3.2
     ml-testing-toolkit: &toolkitBackendImage
       image:
-        tag: v18.10.1
+        tag: v18.11.0
     ml-testing-toolkit-ui: &toolkitFrontendImage
       image:
-        tag: v16.1.2
+        tag: v16.2.0
     ml-testing-toolkit-cli: &toolkitBackendCli
       image:
-        tag: v1.8.4
+        tag: v1.9.0
     quoting-service: &quotingImage
       image:
         tag: v17.6.0
