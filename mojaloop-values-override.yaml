@@ -2,7 +2,7 @@ _DEFINE:
   CONTINUOUS_DEPLOYMENT:
     account-lookup-service: &accountImage
       image:
-        tag: v17.7.0
+        tag: v17.7.1
     als-msisdn-oracle: &alsOracleImage
       image:
         tag: v0.0.16
@@ -14,7 +14,7 @@ _DEFINE:
         tag: v16.4.0
     ml-testing-toolkit: &toolkitBackendImage
       image:
-        tag: v18.11.1
+        tag: v18.11.2
     ml-testing-toolkit-ui: &toolkitFrontendImage
       image:
         tag: v16.2.0
