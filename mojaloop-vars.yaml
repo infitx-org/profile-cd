@@ -1,5 +1,5 @@
 mcm_chart_version: 1.2.5
-mojaloop_chart_version: 16.0.4-21021-37b4043
+mojaloop_chart_version: 17.0.0-21135-c1ab7f7
 finance_portal_chart_version: 5.0.0
 reporting_templates_chart_version: 1.1.15
 ttk_testcases_tag: 17.0.14
