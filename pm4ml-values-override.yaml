@@ -1,9 +1,6 @@
 management-api:
   image:
     tag: 6.5.0
-  env:
-    ENABLE_UI_API_SERVER: true
-    ENABLE_TEST_API: false
 experience-api:
   image:
     tag: 3.1.1
