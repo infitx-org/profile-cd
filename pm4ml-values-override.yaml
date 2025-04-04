@@ -1,6 +1,6 @@
 management-api:
   image:
-    tag: 6.6.0-snapshot.6
+    tag: 6.6.0-snapshot.7
 experience-api:
   image:
     tag: 3.1.1
