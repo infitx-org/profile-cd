@@ -2,10 +2,10 @@ _DEFINE:
   CONTINUOUS_DEPLOYMENT:
     account-lookup-service: &accountImage
       image:
-        tag: v17.9.0
+        tag: v17.9.1
     als-msisdn-oracle: &alsOracleImage
       image:
-        tag: v0.0.17
+        tag: v0.0.18
     central-ledger: &ledgerImage
       image:
         tag: v19.4.3
