@@ -8,13 +8,13 @@ _DEFINE:
         tag: v0.0.18
     central-ledger: &ledgerImage
       image:
-        tag: v19.4.3
+        tag: v19.4.4
     ml-api-adapter: &adapterImage
       image:
         tag: v16.4.2
     ml-testing-toolkit: &toolkitBackendImage
       image:
-        tag: v18.11.5
+        tag: v18.12.0
     ml-testing-toolkit-ui: &toolkitFrontendImage
       image:
         tag: v16.2.0
