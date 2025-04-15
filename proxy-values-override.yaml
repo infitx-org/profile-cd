@@ -5,7 +5,7 @@ _DEFINE:
         tag: 6.7.0
 inter-scheme-proxy-adapter:
   image:
-    tag: v1.5.0
+    tag: v1.5.1
     registry: docker.io
     repository: mojaloop/inter-scheme-proxy-adapter
 management-api-a: *management-api
