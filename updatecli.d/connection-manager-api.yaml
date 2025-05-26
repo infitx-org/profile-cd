@@ -1,0 +1,19 @@
+name: Update connection manager API image tag
+sources:
+  image:
+    kind: dockerimage
+    spec:
+      image: infitx/connection-manager-api
+      versionfilter:
+        kind: semver
+        pattern: ^2.10.2
+    transformers:
+      - trimprefix: v
+      - addprefix: v
+targets:
+  yaml:
+    kind: yaml
+    spec:
+      engine: yamlpath
+      file: mcm-values-override.yaml
+      key: $.api.image.version
