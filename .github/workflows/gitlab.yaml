@@ -13,6 +13,8 @@ on:
       - release-cd.yaml
       - onboard.yaml
       - mojaloopTest.yaml
+      - mcm-values-override.yaml
+      - proxy-pm4ml-vars.yaml
 
 jobs:
   gitlab:
