@@ -1,7 +1,7 @@
 api:
   image:
     name: infitx/connection-manager-api
-    version: v2.10.2
+    version: v2.10.3
 
 # ui:
 #   image:
