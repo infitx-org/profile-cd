@@ -26,7 +26,7 @@ _DEFINE:
         tag: v17.10.0
     sdk-scheme-adapter: &schemeAdapterImage
       image:
-        tag: v24.9.5
+        tag: v24.9.6
     transaction-requests-service: &transactionRequestsImage
       image:
         tag: v14.3.9
