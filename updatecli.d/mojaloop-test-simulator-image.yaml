@@ -16,4 +16,4 @@ targets:
     spec:
       engine: yamlpath
       file: mojaloopTest.yaml
-      key: $.ttkClient
+      key: $.simulatorImage
