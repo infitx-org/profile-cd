@@ -1,0 +1,21 @@
+name: Update Mojaloop test harness version
+sources:
+  latest:
+    kind: githubrelease
+    spec:
+      owner: mojaloop
+      repository: ml-core-test-harness
+      token: '{{ requiredEnv "GITHUB_TOKEN" }}'
+      username: '{{ requiredEnv "GITHUB_ACTOR" }}'
+      versionfilter:
+        kind: semver
+        pattern: ^2.0.0
+    transformers:
+      - trimprefix: v
+targets:
+  yaml:
+    kind: yaml
+    spec:
+      engine: yamlpath
+      file: mojaloopTest.yaml
+      key: $.harnessVersion

@@ -1,0 +1,19 @@
+name: Update Mojaloop Test simulator image
+sources:
+  image:
+    kind: dockerimage
+    spec:
+      image: mojaloop/callback-handler-simulator-svc
+      versionfilter:
+        kind: semver
+        pattern: ^0.1.0
+    transformers:
+      - trimprefix: v
+      - addprefix: mojaloop/callback-handler-simulator-svc:v
+targets:
+  yaml:
+    kind: yaml
+    spec:
+      engine: yamlpath
+      file: mojaloopTest.yaml
+      key: $.ttkClient

@@ -1,0 +1,21 @@
+name: Update Mojaloop test collection
+sources:
+  latest:
+    kind: githubrelease
+    spec:
+      owner: mojaloop
+      repository: testing-toolkit-test-cases
+      token: '{{ requiredEnv "GITHUB_TOKEN" }}'
+      username: '{{ requiredEnv "GITHUB_ACTOR" }}'
+      versionfilter:
+        kind: semver
+        pattern: ^17.0.0
+    transformers:
+      - trimprefix: v
+targets:
+  yaml:
+    kind: yaml
+    spec:
+      engine: yamlpath
+      file: mojaloopTest.yaml
+      key: $.ttkCollection

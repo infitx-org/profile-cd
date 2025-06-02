@@ -1,0 +1,16 @@
+name: Update Mojaloop test ml-testing-toolkit-client-lib
+sources:
+  image:
+    kind: dockerimage
+    spec:
+      image: mojaloop/ml-testing-toolkit-client-lib
+      versionfilter:
+        kind: semver
+        pattern: ^1.0.0
+targets:
+  yaml:
+    kind: yaml
+    spec:
+      engine: yamlpath
+      file: mojaloopTest.yaml
+      key: $.image
