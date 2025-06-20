@@ -29,7 +29,7 @@ _DEFINE:
         tag: v24.10.2
     transaction-requests-service: &transactionRequestsImage
       image:
-        tag: v14.4.2
+        tag: v14.4.3
     mojaloop-simulator: &mojaloopSimulatorImage
       image:
         tag: v15.4.0
