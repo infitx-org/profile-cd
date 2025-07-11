@@ -11,7 +11,7 @@ _DEFINE:
         tag: v19.7.1
     ml-api-adapter: &adapterImage
       image:
-        tag: v16.5.3
+        tag: v16.5.4
     ml-testing-toolkit: &toolkitBackendImage
       image:
         tag: v18.12.4
@@ -38,7 +38,7 @@ _DEFINE:
         tag: v12.3.0
     central-settlement: &settlementImage
       image:
-        tag: v17.1.2
+        tag: v17.1.3
 ml-testing-toolkit:
   ml-testing-toolkit-backend: *toolkitBackendImage
   ml-testing-toolkit-frontend: *toolkitFrontendImage
