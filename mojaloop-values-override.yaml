@@ -32,7 +32,7 @@ _DEFINE:
         tag: v14.4.3
     mojaloop-simulator: &mojaloopSimulatorImage
       image:
-        tag: v15.4.0
+        tag: v15.4.1
     simulator: &simulatorImage
       image:
         tag: v12.3.0
