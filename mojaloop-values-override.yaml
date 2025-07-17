@@ -5,7 +5,7 @@ _DEFINE:
         tag: v17.11.2
     als-msisdn-oracle: &alsOracleImage
       image:
-        tag: v0.0.20
+        tag: v0.0.21
     central-ledger: &ledgerImage
       image:
         tag: v19.7.4
@@ -23,7 +23,7 @@ _DEFINE:
         tag: v1.10.1
     quoting-service: &quotingImage
       image:
-        tag: v17.10.5
+        tag: v17.11.0
     sdk-scheme-adapter: &schemeAdapterImage
       image:
         tag: v24.10.3
