@@ -2,13 +2,13 @@ _DEFINE:
   CONTINUOUS_DEPLOYMENT:
     account-lookup-service: &accountImage
       image:
-        tag: v17.11.2
+        tag: v17.12.0
     als-msisdn-oracle: &alsOracleImage
       image:
         tag: v0.0.21
     central-ledger: &ledgerImage
       image:
-        tag: v19.7.4
+        tag: v19.8.0
     ml-api-adapter: &adapterImage
       image:
         tag: v16.5.7
