@@ -6,8 +6,8 @@ sources:
       url: https://mojaloop.github.io/helm/repo
       name: mojaloop
       versionfilter:
-        kind: semver
-        pattern: '>=17.0.2-00000-f000000 <17.999.999-99999-fffffff'
+        kind: regex
+        pattern: ^17\\.\\d+\\.\\d+(-\\d{5}-[0-9a-f]{7})?$
 targets:
   yaml:
     kind: yaml
