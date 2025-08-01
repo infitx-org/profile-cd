@@ -16,6 +16,7 @@ on:
       - mojaloopTestSync.yaml
       - mcm-values-override.yaml
       - proxy-pm4ml-vars.yaml
+      - finance-portal-values-override.yaml
 
 jobs:
   gitlab:

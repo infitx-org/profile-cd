@@ -1,0 +1,16 @@
+name: Update reporting-legacy-api
+sources:
+  image:
+    kind: dockerimage
+    spec:
+      image: mojaloop/reporting-legacy-api
+      versionfilter:
+        kind: semver
+        pattern: ^12.0.0
+targets:
+  yaml:
+    kind: yaml
+    spec:
+      engine: yamlpath
+      file: finance-portal-values-override.yaml
+      key: $.reporting-legacy-api.image.tag

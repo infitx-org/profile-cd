@@ -1,0 +1,16 @@
+name: Update reporting-hub-bop-shell
+sources:
+  image:
+    kind: dockerimage
+    spec:
+      image: mojaloop/reporting-hub-bop-shell
+      versionfilter:
+        kind: semver
+        pattern: ^2.3.0
+targets:
+  yaml:
+    kind: yaml
+    spec:
+      engine: yamlpath
+      file: finance-portal-values-override.yaml
+      key: $.reporting-hub-bop-shell.image.tag

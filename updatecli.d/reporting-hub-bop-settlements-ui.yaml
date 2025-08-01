@@ -1,0 +1,16 @@
+name: Update reporting-hub-bop-settlements-ui
+sources:
+  image:
+    kind: dockerimage
+    spec:
+      image: mojaloop/reporting-hub-bop-settlements-ui
+      versionfilter:
+        kind: semver
+        pattern: ^0.0.24
+targets:
+  yaml:
+    kind: yaml
+    spec:
+      engine: yamlpath
+      file: finance-portal-values-override.yaml
+      key: $.reporting-hub-bop-settlements-ui.image.tag

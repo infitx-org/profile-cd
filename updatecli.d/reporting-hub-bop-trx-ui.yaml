@@ -1,0 +1,16 @@
+name: Update reporting-hub-bop-trx-ui
+sources:
+  image:
+    kind: dockerimage
+    spec:
+      image: mojaloop/reporting-hub-bop-trx-ui
+      versionfilter:
+        kind: semver
+        pattern: ^2.0.0
+targets:
+  yaml:
+    kind: yaml
+    spec:
+      engine: yamlpath
+      file: finance-portal-values-override.yaml
+      key: $.reporting-hub-bop-trx-ui.image.tag
