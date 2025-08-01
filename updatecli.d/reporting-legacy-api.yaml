@@ -3,7 +3,7 @@ sources:
   image:
     kind: dockerimage
     spec:
-      image: mojaloop/reporting-legacy-api
+      image: mojaloop/reporting
       versionfilter:
         kind: semver
         pattern: ^12.0.0
