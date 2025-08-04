@@ -3,3 +3,4 @@ mojaloop_chart_version: 17.0.4-21541-9ea372b
 finance_portal_chart_version: 5.0.14
 reporting_templates_chart_version: 1.1.15
 ttk_testcases_tag: 17.1.0
+ml_testing_toolkit_cli_chart_version: 15.6.0-20869-5510a51
