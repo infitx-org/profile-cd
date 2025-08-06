@@ -24,4 +24,4 @@ reporting-hub-bop-experience-api-svc:
     tag: v2.0.5
 reporting-aggregator-svc:
   image:
-    tag: v0.0.8
+    tag: v0.0.9
