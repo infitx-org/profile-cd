@@ -1,0 +1,16 @@
+name: Update reporting-aggregator-svc
+sources:
+  image:
+    kind: dockerimage
+    spec:
+      image: mojaloop/reporting-aggregator-svc
+      versionfilter:
+        kind: semver
+        pattern: ^0.0.7
+targets:
+  yaml:
+    kind: yaml
+    spec:
+      engine: yamlpath
+      file: finance-portal-values-override.yaml
+      key: $.reporting-aggregator-svc.image.tag
