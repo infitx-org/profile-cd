@@ -1,6 +1,6 @@
 reporting-hub-bop-api-svc:
   image:
-    tag: v4.1.0
+    tag: v4.1.2
 reporting-hub-bop-settlements-ui:
   image:
     tag: v0.0.25
