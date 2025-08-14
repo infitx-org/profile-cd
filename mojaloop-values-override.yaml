@@ -2,16 +2,16 @@ _DEFINE:
   CONTINUOUS_DEPLOYMENT:
     account-lookup-service: &accountImage
       image:
-        tag: v17.10.1
+        tag: v17.12.2
     als-msisdn-oracle: &alsOracleImage
       image:
-        tag: v0.0.18
+        tag: v0.0.21
     central-ledger: &ledgerImage
       image:
-        tag: v19.5.5
+        tag: v19.8.3
     ml-api-adapter: &adapterImage
       image:
-        tag: v16.5.3
+        tag: v16.5.9
     ml-testing-toolkit: &toolkitBackendImage
       image:
         tag: v18.12.4
@@ -23,7 +23,7 @@ _DEFINE:
         tag: v1.10.0
     quoting-service: &quotingImage
       image:
-        tag: v17.10.2
+        tag: v17.12.1
     sdk-scheme-adapter: &schemeAdapterImage
       image:
         tag: v24.10.2
@@ -32,13 +32,13 @@ _DEFINE:
         tag: v14.4.1
     mojaloop-simulator: &mojaloopSimulatorImage
       image:
-        tag: v15.4.0
+        tag: v15.4.2
     simulator: &simulatorImage
       image:
-        tag: v12.3.0
+        tag: v12.3.2
     central-settlement: &settlementImage
       image:
-        tag: v17.1.2
+        tag: v17.2.2
 ml-testing-toolkit:
   ml-testing-toolkit-backend: *toolkitBackendImage
   ml-testing-toolkit-frontend: *toolkitFrontendImage
