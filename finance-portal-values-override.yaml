@@ -3,16 +3,16 @@ reporting-hub-bop-api-svc:
     tag: v4.2.0
 reporting-hub-bop-settlements-ui:
   image:
-    tag: v0.0.27
+    tag: v0.0.28
 reporting-hub-bop-trx-ui:
   image:
-    tag: v2.0.4
+    tag: v2.0.5
 reporting-hub-bop-role-ui:
   image:
-    tag: v1.5.7
+    tag: v1.5.8
 reporting-hub-bop-positions-ui:
   image:
-    tag: v0.0.11
+    tag: v0.0.12
 reporting-hub-bop-shell:
   image:
     tag: v2.3.3
