@@ -1,0 +1,16 @@
+name: Update reporting-events-processor-svc
+sources:
+  image:
+    kind: dockerimage
+    spec:
+      image: mojaloop/reporting-events-processor-svc
+      versionfilter:
+        kind: semver
+        pattern: ^3.0.0
+targets:
+  yaml:
+    kind: yaml
+    spec:
+      engine: yamlpath
+      file: finance-portal-values-override.yaml
+      key: $.reporting-events-processor-svc.image.tag

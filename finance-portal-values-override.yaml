@@ -25,3 +25,6 @@ reporting-hub-bop-experience-api-svc:
 reporting-aggregator-svc:
   image:
     tag: v0.0.9
+reporting-events-processor-svc:
+  image:
+    tag: v3.4.2
