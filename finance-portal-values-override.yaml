@@ -27,4 +27,4 @@ reporting-aggregator-svc:
     tag: v0.0.9
 reporting-events-processor-svc:
   image:
-    tag: v3.4.2
+    tag: v3.5.2
