@@ -2,7 +2,7 @@ _DEFINE:
   CONTINUOUS_DEPLOYMENT:
     management-api: &management-api
       image:
-        tag: 6.8.1
+        tag: 6.8.2
 inter-scheme-proxy-adapter:
   image:
     tag: v1.7.1
