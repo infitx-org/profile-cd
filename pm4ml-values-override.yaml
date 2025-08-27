@@ -14,4 +14,4 @@ ttk:
       tag: v18.15.0
   ml-testing-toolkit-frontend:
     image:
-      tag: v16.7.0
+      tag: v16.7.1
