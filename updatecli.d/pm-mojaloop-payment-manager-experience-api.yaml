@@ -3,10 +3,10 @@ sources:
   image:
     kind: dockerimage
     spec:
-      image: pm4ml/mojaloop-payment-manager-experience-api
+      image: infitx/mojaloop-payment-manager-experience-api
       versionfilter:
         kind: semver
-        pattern: ^3.1.0
+        pattern: ^3.2.0
 targets:
   yaml:
     kind: yaml
