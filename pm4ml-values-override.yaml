@@ -3,7 +3,7 @@ management-api:
     tag: 6.8.2
 experience-api:
   image:
-    tag: 3.1.1
+    tag: v3.2.2
 scheme-adapter:
   sdk-scheme-adapter-api-svc:
     image:
