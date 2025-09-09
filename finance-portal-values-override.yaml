@@ -18,7 +18,7 @@ reporting-hub-bop-shell:
     tag: v2.3.3
 reporting-legacy-api:
   image:
-    tag: v12.3.1
+    tag: v12.3.2
 reporting-hub-bop-experience-api-svc:
   image:
     tag: v2.0.5
