@@ -14,7 +14,7 @@ ttk:
       tag: v18.15.1
   ml-testing-toolkit-frontend:
     image:
-      tag: v16.7.2
+      tag: v16.7.3
 frontend:
   image:
     repository: pm4ml/mojaloop-payment-manager-ui
