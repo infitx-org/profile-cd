@@ -11,7 +11,7 @@ _DEFINE:
         tag: v19.9.2
     ml-api-adapter: &adapterImage
       image:
-        tag: v16.5.9
+        tag: v16.5.10
     ml-testing-toolkit: &toolkitBackendImage
       image:
         tag: v18.15.1
