@@ -1,0 +1,16 @@
+name: Update PM ml-testing-toolkit-ui
+sources:
+  image:
+    kind: dockerimage
+    spec:
+      image: mojaloop/ml-testing-toolkit-ui
+      versionfilter:
+        kind: semver
+        pattern: ^16.0.0
+targets:
+  yaml:
+    kind: yaml
+    spec:
+      engine: yamlpath
+      file: comesaTests.yaml
+      key: $.ttkHelmValues.ml-testing-toolkit-frontend.image.tag

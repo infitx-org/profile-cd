@@ -1,2 +1,9 @@
 comesaTestsVersion: v1.8.1
 ttkHelmVersion: 17.10.1-22016-6e902a2
+ttkHelmValues:
+  ml-testing-toolkit-backend:
+    image:
+      tag: v18.0.0
+  ml-testing-toolkit-frontend:
+    image:
+      tag: v16.0.0

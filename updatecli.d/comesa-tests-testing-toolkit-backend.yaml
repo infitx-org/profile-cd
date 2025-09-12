@@ -1,0 +1,16 @@
+name: Update comesa tests ml-testing-toolkit backend
+sources:
+  image:
+    kind: dockerimage
+    spec:
+      image: mojaloop/ml-testing-toolkit
+      versionfilter:
+        kind: semver
+        pattern: ^18.2.0
+targets:
+  yaml:
+    kind: yaml
+    spec:
+      engine: yamlpath
+      file: comesaTests.yaml
+      key: $.ttkHelmValues.ml-testing-toolkit-backend.image.tag
