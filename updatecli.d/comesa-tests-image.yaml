@@ -1,0 +1,16 @@
+name: Update comesa-tests image tag
+sources:
+  image:
+    kind: dockerimage
+    spec:
+      image: ghcr.io/infitx-org/comesa-tests
+      versionfilter:
+        kind: semver
+        pattern: ^1.0.0
+targets:
+  yaml:
+    kind: yaml
+    spec:
+      engine: yamlpath
+      file: comesaTests.yaml
+      key: $.comesaTestsVersion
