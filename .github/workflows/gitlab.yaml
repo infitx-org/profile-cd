@@ -10,6 +10,7 @@ on:
       - proxy-values-override.yaml
       - mojaloop-vars.yaml
       - cluster-config.yaml
+      - comesaTests.yaml
       - release-cd.yaml
       - onboard.yaml
       - mojaloopTest.yaml
