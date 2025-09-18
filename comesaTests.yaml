@@ -1,4 +1,4 @@
-comesaTestsVersion: v1.8.8
+comesaTestsVersion: v1.9.0
 ttkHelmVersion: 17.10.1-22016-6e902a2
 ttkHelmValues:
   ml-testing-toolkit-backend:
