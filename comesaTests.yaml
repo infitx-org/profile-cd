@@ -6,4 +6,4 @@ ttkHelmValues:
       tag: v18.16.1
   ml-testing-toolkit-frontend:
     image:
-      tag: v16.7.3
+      tag: v16.7.4
