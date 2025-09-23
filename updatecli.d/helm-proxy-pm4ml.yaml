@@ -14,4 +14,4 @@ targets:
     spec:
       engine: yamlpath
       file: proxy-pm4ml-vars.yaml
-      key: $.proxy_pm4mls[*].proxy_pm4ml_chart_version
+      key: $.default.proxy_pm4ml_chart_version
