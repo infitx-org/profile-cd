@@ -1,17 +1,17 @@
 proxy_pm4mls:
   proxy-zmw:
-    proxy_pm4ml_chart_version: 1.1.0
+    proxy_pm4ml_chart_version: 1.2.1
   proxy-mwk:
-    proxy_pm4ml_chart_version: 1.1.0
+    proxy_pm4ml_chart_version: 1.2.1
   proxy-kes:
-    proxy_pm4ml_chart_version: 1.1.0
+    proxy_pm4ml_chart_version: 1.2.1
   proxy-ugx:
-    proxy_pm4ml_chart_version: 1.1.0
+    proxy_pm4ml_chart_version: 1.2.1
   proxy-rwf:
-    proxy_pm4ml_chart_version: 1.1.0
+    proxy_pm4ml_chart_version: 1.2.1
   proxy-egp:
-    proxy_pm4ml_chart_version: 1.1.0
+    proxy_pm4ml_chart_version: 1.2.1
   proxy-mur:
-    proxy_pm4ml_chart_version: 1.1.0
+    proxy_pm4ml_chart_version: 1.2.1
   proxy-etb:
-    proxy_pm4ml_chart_version: 1.1.0
+    proxy_pm4ml_chart_version: 1.2.1
