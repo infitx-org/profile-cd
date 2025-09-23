@@ -1,0 +1,17 @@
+name: Update Proxy pm4ml Helm chart version
+sources:
+  lastRelease:
+    kind: helmchart
+    spec:
+      url: https://pm4ml.github.io/mojaloop-payment-manager-helm/repo
+      name: mojaloop-proxy-payment-manager
+      versionfilter:
+        kind: semver
+        pattern: ^1.0.0
+targets:
+  yaml:
+    kind: yaml
+    spec:
+      engine: yamlpath
+      file: proxy-pm4ml-vars.yaml
+      key: $.proxy_pm4mls[*].proxy_pm4ml_chart_version

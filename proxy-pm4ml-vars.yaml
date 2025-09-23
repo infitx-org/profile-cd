@@ -1,1 +1,17 @@
-proxy_pm4ml_chart_version: 1.1.1
+proxy_pm4mls:
+  proxy-zmw:
+    proxy_pm4ml_chart_version: 1.1.0
+  proxy-mwk:
+    proxy_pm4ml_chart_version: 1.1.0
+  proxy-kes:
+    proxy_pm4ml_chart_version: 1.1.0
+  proxy-ugx:
+    proxy_pm4ml_chart_version: 1.1.0
+  proxy-rwf:
+    proxy_pm4ml_chart_version: 1.1.0
+  proxy-egp:
+    proxy_pm4ml_chart_version: 1.1.0
+  proxy-mur:
+    proxy_pm4ml_chart_version: 1.1.0
+  proxy-etb:
+    proxy_pm4ml_chart_version: 1.1.0
