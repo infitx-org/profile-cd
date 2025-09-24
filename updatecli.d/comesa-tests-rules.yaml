@@ -1,0 +1,23 @@
+name: Update comesa-tests sync response rules
+sources:
+  latest:
+    kind: githubrelease
+    spec:
+      owner: infitx-org
+      repository: comesa-tests
+      token: '{{ requiredEnv "GITHUB_TOKEN" }}'
+      username: '{{ requiredEnv "GITHUB_ACTOR" }}'
+      versionfilter:
+        kind: semver
+        pattern: ^1.0.0
+    transformers:
+      - trimprefix: v
+      - addprefix: https://raw.githubusercontent.com/infitx-org/comesa-tests/refs/tags/
+      - addsuffix: /ttk-rules/sync-response-rules.json
+targets:
+  yaml:
+    kind: yaml
+    spec:
+      engine: yamlpath
+      file: pm4ml-values-override.yaml
+      key: $.ttk.ml-testing-toolkit-backend.config_files.rules_response__default.json
