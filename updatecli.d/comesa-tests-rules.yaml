@@ -20,4 +20,4 @@ targets:
     spec:
       engine: yamlpath
       file: pm4ml-values-override.yaml
-      key: $.ttk.ml-testing-toolkit-backend.config_files.['rules_response__default.json']
+      key: $.ttk.ml-testing-toolkit-backend.config_files['rules_response__default.json']
