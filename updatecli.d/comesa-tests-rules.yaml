@@ -12,7 +12,7 @@ sources:
         pattern: ^1.0.0
     transformers:
       - trimprefix: v
-      - addprefix: https://raw.githubusercontent.com/infitx-org/comesa-tests/refs/tags/
+      - addprefix: https://raw.githubusercontent.com/infitx-org/comesa-tests/refs/tags/v
       - addsuffix: /ttk-rules/sync-response-rules.json
 targets:
   yaml:
