@@ -13,7 +13,7 @@ ttk:
     image:
       tag: v18.16.1
     config_files:
-      rules_response__default.json: https://raw.githubusercontent.com/infitx-org/comesa-tests/refs/tags/v1.14.1/ttk-rules/sync-response-rules.json
+      rules_response__default.json: https://raw.githubusercontent.com/infitx-org/comesa-tests/refs/tags/v1.14.2/ttk-rules/sync-response-rules.json
   ml-testing-toolkit-frontend:
     image:
       tag: v16.7.4
