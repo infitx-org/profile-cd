@@ -1,0 +1,17 @@
+name: Update pm4ml Helm chart version
+sources:
+  lastRelease:
+    kind: helmchart
+    spec:
+      url: https://pm4ml.github.io/mojaloop-payment-manager-helm/repo
+      name: mojaloop-payment-manager
+      versionfilter:
+        kind: semver
+        pattern: ^10.0.0
+targets:
+  yaml:
+    kind: yaml
+    spec:
+      engine: yamlpath
+      file: pm4ml-vars.yaml
+      key: $.default.pm4ml_chart_version
