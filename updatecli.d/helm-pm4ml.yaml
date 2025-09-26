@@ -14,4 +14,4 @@ targets:
     spec:
       engine: yamlpath
       file: pm4ml-vars.yaml
-      key: $.default.pm4ml_chart_version
+      key: $.pm4mls_default.pm4ml_chart_version

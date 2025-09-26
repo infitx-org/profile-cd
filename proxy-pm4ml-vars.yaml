@@ -1,2 +1,2 @@
-default:
+proxy_pm4mls_default:
   proxy_pm4ml_chart_version: 1.2.1
