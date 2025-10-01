@@ -1,6 +1,6 @@
 management-api:
   image:
-    tag: 6.9.0
+    tag: 6.10.0
 experience-api:
   image:
     tag: v3.2.2
