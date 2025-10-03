@@ -7,9 +7,6 @@ sources:
       versionfilter:
         kind: semver
         pattern: ^2.14.2-storage-cluster.0
-    transformers:
-      - trimprefix: v
-      - addprefix: v
 targets:
   yaml:
     kind: yaml
