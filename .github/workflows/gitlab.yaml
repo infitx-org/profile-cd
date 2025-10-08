@@ -9,6 +9,7 @@ on:
       - pm4ml-values-override.yaml
       - proxy-values-override.yaml
       - mojaloop-vars.yaml
+      - common-vars.yaml
       - cluster-config.yaml
       - comesaTests.yaml
       - release-cd.yaml
