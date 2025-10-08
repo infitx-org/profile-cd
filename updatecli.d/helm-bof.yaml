@@ -1,0 +1,17 @@
+name: Update BOF Helm chart version
+sources:
+  lastRelease:
+    kind: helmchart
+    spec:
+      url: https://mojaloop.github.io/charts/repo
+      name: bof
+      versionfilter:
+        kind: semver
+        pattern: "^5.0.0"
+targets:
+  yaml:
+    kind: yaml
+    spec:
+      engine: yamlpath
+      file: common-vars.yaml
+      key: $.bof_chart_version
