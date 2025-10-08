@@ -20,6 +20,8 @@ on:
       - pm4ml-vars.yaml
       - proxy-pm4ml-vars.yaml
       - finance-portal-values-override.yaml
+      - pm4mlPerfTest.yaml
+      - pm4mlPerfTestSync.yaml
 
 jobs:
   gitlab:
