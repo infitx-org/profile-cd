@@ -1,0 +1,19 @@
+name: Update pm4mlPerfTest test image
+sources:
+  image:
+    kind: dockerimage
+    spec:
+      image: mojaloop/ml-core-test-harness
+      versionfilter:
+        kind: semver
+        pattern: ^2.0.0
+    transformers:
+      - trimprefix: v
+      - addprefix: mojaloop/ml-core-test-harness:v
+targets:
+  yaml:
+    kind: yaml
+    spec:
+      engine: yamlpath
+      file: pm4mlPerfTest.yaml
+      key: $.image
