@@ -5,7 +5,7 @@ _DEFINE:
         tag: v17.14.3
     als-msisdn-oracle: &alsOracleImage
       image:
-        tag: v0.0.26
+        tag: v0.0.27
     central-ledger: &ledgerImage
       image:
         tag: v19.11.2
