@@ -22,6 +22,7 @@ on:
       - finance-portal-values-override.yaml
       - pm4mlPerfTest.yaml
       - pm4mlPerfTestSync.yaml
+      - portal-test.yaml
 
 jobs:
   gitlab:
