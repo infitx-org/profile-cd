@@ -9,7 +9,7 @@ sources:
       username: '{{ requiredEnv "GITHUB_ACTOR" }}'
       versionfilter:
         kind: semver
-        pattern: ^17.0.0
+        pattern: ^18.0.0
     transformers:
       - trimprefix: v
 targets:
