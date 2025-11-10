@@ -11,7 +11,7 @@ scheme-adapter:
 ttk:
   ml-testing-toolkit-backend:
     image:
-      tag: v18.16.3
+      tag: v18.16.4
     config_files:
       rules_response__default.json: https://raw.githubusercontent.com/infitx-org/comesa-tests/refs/tags/v1.16.4/ttk-rules/sync-response-rules.json
   ml-testing-toolkit-frontend:
