@@ -23,6 +23,7 @@ on:
       - pm4mlPerfTest.yaml
       - pm4mlPerfTestSync.yaml
       - portal-test.yaml
+      - dev.yaml
 
 jobs:
   gitlab:
