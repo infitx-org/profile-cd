@@ -9,13 +9,26 @@ sources:
       username: '{{ requiredEnv "GITHUB_ACTOR" }}'
       versionfilter:
         kind: semver
-        pattern: ^18.0.0
+        pattern: ^19.0.0
     transformers:
       - trimprefix: v
 targets:
   yaml:
     kind: yaml
     spec:
-      engine: yamlpath
-      file: mojaloop-vars.yaml
-      key: $.ttk_testcases_tag
+      - engine: yamlpath
+        file: mojaloop-vars.yaml
+        key: $.ttk_testcases_tag
+        value: '{{ source "latest" }}'
+      - engine: yamlpath
+        file: mojaloop-vars.yaml
+        key: $.ttk_testcases_path_in_zip_setup
+        value: "testing-toolkit-test-cases-{{ source \"latest\" }}/collections/hub/provisioning/for_golden_path,testing-toolkit-test-cases-{{ source \"latest\" }}/collections/inter-scheme-release/provisioning/for_golden_path"
+      - engine: yamlpath
+        file: mojaloop-vars.yaml
+        key: $.ttk_testcases_path_in_zip_gp
+        value: "testing-toolkit-test-cases-{{ source \"latest\" }}/collections/hub/golden_path,testing-toolkit-test-cases-{{ source \"latest\" }}/collections/inter-scheme-release/golden_path"
+      - engine: yamlpath
+        file: mojaloop-vars.yaml
+        key: $.ttk_testcases_path_in_zip_cleanup
+        value: "testing-toolkit-test-cases-{{ source \"latest\" }}/collections/hub/cleanup,testing-toolkit-test-cases-{{ source \"latest\" }}/collections/inter-scheme-release/cleanup"

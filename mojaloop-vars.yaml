@@ -4,3 +4,6 @@ finance_portal_chart_version: 5.1.3
 reporting_templates_chart_version: 1.4.9
 ttk_testcases_tag: 18.0.0
 ml_testing_toolkit_cli_chart_version: 15.11.0-22601-16443cb
+ttk_testcases_path_in_zip_setup: "testing-toolkit-test-cases-17.3.3/collections/hub/provisioning/for_golden_path,testing-toolkit-test-cases-17.3.3/collections/inter-scheme-release/provisioning/for_golden_path"
+ttk_testcases_path_in_zip_gp: "testing-toolkit-test-cases-17.3.3/collections/hub/golden_path,testing-toolkit-test-cases-17.3.3/collections/inter-scheme-release/golden_path"
+ttk_testcases_path_in_zip_cleanup: "testing-toolkit-test-cases-17.3.3/collections/hub/cleanup,testing-toolkit-test-cases-17.3.3/collections/inter-scheme-release/cleanup"
