@@ -27,7 +27,7 @@ the following chain of events:
    workflow in this repository.
 1. This workflow checks the Docker Hub for the latest Mojaloop docker images that
    fulfill the semver conditions specified in the manifest files in the
-   [updatecli.d](updatecli.d) directory.
+   [.updatecli](.updatecli) directory.
 1. If there are new images that fulfill the conditions, the workflow
    creates a pull request with the latest versions set in the `*-override.yaml`
    files, which is automatically merged.
@@ -74,7 +74,7 @@ This chain of events relies on certain configurations:
 ## Specifying the conditions
 
 The conditions for the images to be updated are specified in the manifest files
-in the [updatecli.d](updatecli.d) directory. The files are named after the
+in the [.updatecli](.updatecli) directory. The files are named after the
 images they are tracking. The conditions are specified in the
 `sources.image.spec.versionfilter` property as a semver range:
 
