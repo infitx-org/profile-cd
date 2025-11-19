@@ -1,0 +1,19 @@
+name: Update release-cd image tag
+sources:
+  image:
+    kind: dockerimage
+    spec:
+      image: ghcr.io/infitx-org/release-cd
+      versionfilter:
+        kind: semver
+        pattern: ^1.0.0
+    transformers:
+      - trimprefix: v
+      - addprefix: ghcr.io/infitx-org/release-cd:v
+targets:
+  yaml:
+    kind: yaml
+    spec:
+      engine: yamlpath
+      file: kubescape.yaml
+      key: $.image
