@@ -21,7 +21,7 @@ reporting-legacy-api:
     tag: v12.4.2
 reporting-hub-bop-experience-api-svc:
   image:
-    tag: v2.0.7
+    tag: v2.0.8
 reporting-aggregator-svc:
   image:
     tag: v0.0.9
