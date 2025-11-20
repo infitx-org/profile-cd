@@ -25,6 +25,7 @@ on:
       - portal-test.yaml
       - dev.yaml
       - kubescape.yaml
+      - kyverno-best-practices.yaml
 
 jobs:
   gitlab:
