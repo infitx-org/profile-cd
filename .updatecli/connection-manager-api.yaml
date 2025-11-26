@@ -3,7 +3,7 @@ sources:
   image:
     kind: dockerimage
     spec:
-      image: infitx/connection-manager-api
+      image: mojaloop/connection-manager-api
       versionfilter:
         kind: semver
         pattern: ^3.0.0
