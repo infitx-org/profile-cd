@@ -1,6 +1,6 @@
 api:
   image:
-    name: infitx/connection-manager-api
+    name: mojaloop/connection-manager-api
     version: v3.2.0
 
 # ui:
