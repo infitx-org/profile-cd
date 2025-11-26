@@ -6,7 +6,7 @@ sources:
       image: infitx/connection-manager-api
       versionfilter:
         kind: semver
-        pattern: ^2.14.2-storage-cluster.0
+        pattern: ^3.0.0
 targets:
   yaml:
     kind: yaml
