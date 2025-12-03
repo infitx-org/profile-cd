@@ -72,8 +72,8 @@ mojaloop-simulator:
     payeefsp: *mojaloopSimulatorConfig
     testfsp1: *mojaloopSimulatorConfig
     testfsp2: *mojaloopSimulatorConfig
-    testfsp3: *mojaloopSimulatorConfig
-    testfsp4: *mojaloopSimulatorConfig
+    # testfsp3: *mojaloopSimulatorConfig
+    # testfsp4: *mojaloopSimulatorConfig
 centralsettlement:
   centralsettlement-service: *settlementImage
   centralsettlement-handler-deferredsettlement: *settlementImage
