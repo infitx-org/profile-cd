@@ -1,5 +1,5 @@
-image: mojaloop/ml-core-test-harness:v2.14.2
+image: mojaloop/ml-core-test-harness:v2.15.0
 simulatorImage: mojaloop/callback-handler-simulator-svc:v0.1.8
-harnessVersion: 2.14.2
+harnessVersion: 2.15.0
 ttkClient: v1.12.2
 ttkCollection: 18.0.0
