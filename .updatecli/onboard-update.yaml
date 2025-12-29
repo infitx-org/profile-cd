@@ -3,13 +3,13 @@ sources:
   image:
     kind: dockerimage
     spec:
-      image: ghcr.io/infitx-org/onboard
+      image: ghcr.io/infitx-org/onboarding
       versionfilter:
         kind: semver
-        pattern: ^2.0.0
+        pattern: ^1.0.0
     transformers:
       - trimprefix: v
-      - addprefix: ghcr.io/infitx-org/onboard:v
+      - addprefix: ghcr.io/infitx-org/onboarding:v
 targets:
   yaml:
     kind: yaml
