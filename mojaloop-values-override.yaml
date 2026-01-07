@@ -2,7 +2,7 @@ _DEFINE:
   CONTINUOUS_DEPLOYMENT:
     account-lookup-service: &accountImage
       image:
-        tag: v17.14.8
+        tag: v17.14.9
     als-msisdn-oracle: &alsOracleImage
       image:
         tag: v0.0.27
@@ -23,7 +23,7 @@ _DEFINE:
         tag: v1.12.2
     quoting-service: &quotingImage
       image:
-        tag: v17.13.9
+        tag: v17.13.10
     sdk-scheme-adapter: &schemeAdapterImage
       image:
         tag: v24.18.2
