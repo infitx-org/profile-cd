@@ -1,7 +1,7 @@
 api:
   image:
     name: mojaloop/connection-manager-api
-    version: v3.4.0
+    version: v3.5.0
 
 # ui:
 #   image:
