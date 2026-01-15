@@ -1,6 +1,6 @@
 mcm_chart_version: 1.3.3
-mojaloop_chart_version: 17.1.0-22727-abf3a59
+mojaloop_chart_version: 17.1.0-22751-6e88123
 finance_portal_chart_version: 5.1.4
 reporting_templates_chart_version: 1.4.10
 ttk_testcases_tag: 19.0.0
-ml_testing_toolkit_cli_chart_version: 15.11.0-22727-abf3a59
+ml_testing_toolkit_cli_chart_version: 15.11.0-22751-6e88123
