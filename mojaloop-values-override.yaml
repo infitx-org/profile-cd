@@ -5,7 +5,7 @@ _DEFINE:
         tag: v17.14.10
     als-msisdn-oracle: &alsOracleImage
       image:
-        tag: v0.0.27
+        tag: v0.0.28
     central-ledger: &ledgerImage
       image:
         tag: v19.11.8
@@ -29,7 +29,7 @@ _DEFINE:
         tag: v24.18.3
     transaction-requests-service: &transactionRequestsImage
       image:
-        tag: v14.4.6
+        tag: v14.4.7
     mojaloop-simulator: &mojaloopSimulatorImage
       image:
         tag: v15.5.2
