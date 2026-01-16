@@ -15,4 +15,4 @@ targets:
     spec:
       engine: yamlpath
       file: mojaloop-vars.yaml
-      key: $.mojaloop_chart_version
+      key: $.mojaloop_helm_version
