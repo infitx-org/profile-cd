@@ -15,7 +15,7 @@ reporting-hub-bop-positions-ui:
     tag: v0.0.16
 reporting-hub-bop-shell:
   image:
-    tag: v2.3.5
+    tag: v2.3.6
 reporting-legacy-api:
   image:
     tag: v12.4.2
