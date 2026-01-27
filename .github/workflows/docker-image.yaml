@@ -50,12 +50,26 @@ jobs:
             echo "Triggered by: ${{ github.event.inputs.upstream }}" >> update.log
           fi
 
+      - id: trim
+        # trim github.event.inputs.image to the last segment after /
+        # trim github.event.inputs.chart to the last segment after /
+        run: |
+          if [ "${{ github.event.inputs.image }}" != "" ] ; then
+            IMAGE_NAME="${{ github.event.inputs.image }}"
+            IMAGE_NAME="${IMAGE_NAME##*/}"
+            echo "image=${IMAGE_NAME}" >> $GITHUB_OUTPUT
+          fi
+          if [ "${{ github.event.inputs.chart }}" != "" ] ; then
+            CHART_NAME="${{ github.event.inputs.chart }}"
+            CHART_NAME="${CHART_NAME##*/}"
+            echo "chart=${CHART_NAME}" >> $GITHUB_OUTPUT
+          fi
       - name: Create pull request
         id: create_pr
         uses: peter-evans/create-pull-request@v7
         with:
-          commit-message: Update ${{ github.event.inputs.image != 0 && format('Docker image {0} ({1})', github.event.inputs.image, github.event.inputs.tag) || github.event.inputs.chart != 0 && format('Helm chart {0} ({1})', github.event.inputs.chart, github.event.inputs.tag) || format('[{0}]', github.event_name) }}
-          title: Update ${{ github.event.inputs.image != 0 && format('Docker image {0} ({1})', github.event.inputs.image, github.event.inputs.tag) || github.event.inputs.chart != 0 && format('Helm chart {0} ({1})', github.event.inputs.chart, github.event.inputs.tag) || format('[{0}]', github.event_name) }}
+          commit-message: ${{ github.event.inputs.image != 0 && format('{0}:{1}', steps.trim.outputs.image, github.event.inputs.tag) || github.event.inputs.chart != 0 && format('chart {0} ({1})', steps.trim.outputs.chart, github.event.inputs.tag) || format('[{0}]', github.event_name) }}
+          title: ${{ github.event.inputs.image != 0 && format('{0}:{1}', steps.trim.outputs.image, github.event.inputs.tag) || github.event.inputs.chart != 0 && format('chart {0} ({1})', steps.trim.outputs.chart, github.event.inputs.tag) || format('[{0}]', github.event_name) }}
           body-path: update.log
           delete-branch: true
 
