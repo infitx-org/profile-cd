@@ -4,4 +4,4 @@ mojaloop_helm_version: 17.1.0-22947-a639b9f
 finance_portal_chart_version: 5.1.4
 reporting_templates_chart_version: 1.4.11
 ttk_testcases_tag: 20.2.3
-ml_testing_toolkit_cli_chart_version: 15.11.0-22947-a639b9f
+ml_testing_toolkit_cli_chart_version: 15.11.0-22959-aa16a53
