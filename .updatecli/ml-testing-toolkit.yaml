@@ -5,8 +5,9 @@ sources:
     spec:
       image: mojaloop/ml-testing-toolkit
       versionfilter:
-        kind: semver
-        pattern: ^18.2.0
+        kind: regex/semver
+        regex: ^([0-9]+\.[0-9]+\.[0-9]+-infitx\.[0-9]+)$
+        pattern: ^18.0.0-0
 targets:
   yaml:
     kind: yaml
