@@ -8,6 +8,8 @@ sources:
         kind: regex/semver
         regex: ^([0-9]+\.[0-9]+\.[0-9]+-infitx\.[0-9]+)$
         pattern: ^18.20.0-0
+    transformers:
+      - trimprefix: v
 targets:
   yaml:
     kind: yaml
