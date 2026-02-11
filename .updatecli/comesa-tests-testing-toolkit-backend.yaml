@@ -5,11 +5,8 @@ sources:
     spec:
       image: mojaloop/ml-testing-toolkit
       versionfilter:
-        kind: regex/semver
-        regex: ^([0-9]+\.[0-9]+\.[0-9]+-infitx\.[0-9]+)$
-        pattern: ^18.20.0-0
-    transformers:
-      - trimprefix: v
+        kind: semver
+        pattern: ">=18.20.0-infitx.0 <=18.20.0-infitx.9999"
 targets:
   yaml:
     kind: yaml
