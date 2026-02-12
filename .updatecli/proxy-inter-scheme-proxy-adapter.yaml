@@ -6,7 +6,7 @@ sources:
       image: mojaloop/inter-scheme-proxy-adapter
       versionfilter:
         kind: semver
-        pattern: ^1.3.3
+        pattern: ">=1.9.0-infitx.0 <=1.9.0-infitx.9999"
 targets:
   yaml:
     kind: yaml
