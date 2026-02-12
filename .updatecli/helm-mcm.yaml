@@ -3,7 +3,7 @@ sources:
   lastRelease:
     kind: helmchart
     spec:
-      url: https://pm4ml.github.io/helm
+      url: https://mojaloop.github.io/helm/repo
       name: connection-manager
       versionfilter:
         kind: semver

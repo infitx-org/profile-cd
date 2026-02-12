@@ -1,4 +1,5 @@
 mcm_chart_version: 1.3.3
+mcm_chart_repo: https://mojaloop.github.io/helm/repo
 mojaloop_chart_version: 17.1.0-22789-edb41d7
 mojaloop_helm_version: 17.1.1-infitx.22983
 finance_portal_chart_version: 5.1.5-infitx.4100
