@@ -6,7 +6,7 @@ sources:
       image: mojaloop/ml-api-adapter
       versionfilter:
         kind: semver
-        pattern: ^16.0.0
+        pattern: '>=16.9.0-infitx.0 <=16.9.0-infitx.999999'
 targets:
   yaml:
     kind: yaml
