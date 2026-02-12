@@ -6,7 +6,7 @@ sources:
       image: mojaloop/quoting-service
       versionfilter:
         kind: semver
-        pattern: ^17.0.0
+        pattern: ">=17.15.0-infitx.0 <=17.15.0-infitx.9999"
 targets:
   yaml:
     kind: yaml
