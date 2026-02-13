@@ -8,7 +8,7 @@ _DEFINE:
         tag: v0.0.28
     central-ledger: &ledgerImage
       image:
-        tag: v19.13.0-infitx.4
+        tag: v19.13.0-infitx.5
     ml-api-adapter: &adapterImage
       image:
         tag: v16.9.0-infitx.0
