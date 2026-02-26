@@ -6,7 +6,7 @@ sources:
       image: pm4ml/mojaloop-payment-manager-management-api
       versionfilter:
         kind: semver
-        pattern: ^7.0.0
+        pattern: ">=7.2.0-infitx.0 <=7.2.0-infitx.999"
 targets:
   yaml:
     kind: yaml
