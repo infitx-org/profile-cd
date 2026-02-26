@@ -2,7 +2,7 @@ _DEFINE:
   CONTINUOUS_DEPLOYMENT:
     management-api: &management-api
       image:
-        tag: 7.1.3
+        tag: 7.2.0-infitx.4
 inter-scheme-proxy-adapter:
   image:
     tag: v1.9.0-infitx.1
