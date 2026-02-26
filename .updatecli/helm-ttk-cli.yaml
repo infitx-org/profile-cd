@@ -7,7 +7,7 @@ sources:
       name: ml-testing-toolkit-cli
       versionfilter:
         kind: semver
-        pattern: '>=15.11.1-infitx.0 <=15.11.1-infitx.999999'
+        pattern: '>=15.12.1-infitx.0 <=15.12.1-infitx.999999'
 targets:
   yaml:
     kind: yaml
