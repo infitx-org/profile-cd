@@ -4,5 +4,5 @@ mojaloop_chart_version: 17.1.0-22789-edb41d7
 mojaloop_helm_version: 17.2.1-infitx.23259
 finance_portal_chart_version: 5.1.5-infitx.4100
 reporting_templates_chart_version: 1.4.12
-ttk_testcases_tag: 20.2.5
+ttk_testcases_tag: 20.3.0-infitx.1
 ml_testing_toolkit_cli_chart_version: 15.12.1-infitx.23259
