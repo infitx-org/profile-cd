@@ -1,12 +1,14 @@
 name: Update Mojaloop test collection
 sources:
   latest:
-    kind: githubrelease
+    kind: github
     spec:
       owner: mojaloop
       repository: testing-toolkit-test-cases
       token: '{{ requiredEnv "GITHUB_TOKEN" }}'
       username: '{{ requiredEnv "GITHUB_ACTOR" }}'
+      branch: 'minor/infitx'
+      type: tag
       versionfilter:
         kind: semver
         pattern: '>=20.3.0-infitx.0 <=20.3.0-infitx.999999'
