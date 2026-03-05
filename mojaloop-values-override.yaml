@@ -23,7 +23,7 @@ _DEFINE:
         tag: v1.12.3
     quoting-service: &quotingImage
       image:
-        tag: v17.15.0-infitx.3
+        tag: v17.15.0-infitx.4
     sdk-scheme-adapter: &schemeAdapterImage
       image:
         tag: v24.20.0-infitx.2
