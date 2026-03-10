@@ -6,7 +6,7 @@ sources:
       image: mojaloop/ml-testing-toolkit
       versionfilter:
         kind: semver
-        pattern: ">=18.20.0-infitx.0 <=18.20.0-infitx.9999"
+        pattern: ">=18.20.0-infitx.0 <=18.99.0-infitx.9999"
 targets:
   yaml:
     kind: yaml
