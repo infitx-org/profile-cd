@@ -11,7 +11,7 @@ _DEFINE:
         tag: v19.13.0-infitx.19
     ml-api-adapter: &adapterImage
       image:
-        tag: v16.9.0-infitx.2
+        tag: v16.9.0-infitx.3
     ml-testing-toolkit: &toolkitBackendImage
       image:
         tag: v18.20.0-infitx.5
